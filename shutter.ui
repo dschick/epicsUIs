@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="caLed" name="caled">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>102</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>100</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="rectangular">
+     <bool>true</bool>
+    </property>
+    <property name="gradientEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="ledWidth">
+     <number>100</number>
+    </property>
+    <property name="ledHeight">
+     <number>25</number>
+    </property>
+    <property name="linearGradient">
+     <bool>true</bool>
+    </property>
+    <property name="scaleContents">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:PM:Flip_RBV</string>
+    </property>
+    <property name="trueValue">
+     <string extracomment="Open">2</string>
+    </property>
+    <property name="falseValue">
+     <string extracomment="Closed">1</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Shutter PM</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:PM:Shutter_RBV</string>
+    </property>
+   </widget>
+   <widget class="caInclude" name="cainclude">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>330</width>
+      <height>325</height>
+     </rect>
+    </property>
+    <property name="macro">
+     <string>P=SHUTTER:,R=PM:;</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string notr="true">TLMFF.ui</string>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>70</y>
+      <width>170</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="label">
+     <string notr="true">Shutter NOPA</string>
+    </property>
+    <property name="labels">
+     <string>HHG;PM;NOPA</string>
+    </property>
+    <property name="files">
+     <string>TLMFF.ui;TLMFF.ui;TLMFF.ui</string>
+    </property>
+    <property name="args">
+     <string>P=SHUTTER:,R=HHG:;P=SHUTTER:,R=PM:;P=SHUTTER:,R=NOPA:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caInclude</class>
+   <extends>QWidget</extends>
+   <header>caInclude</header>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

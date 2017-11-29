@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>330</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog	{
+	background-color: rgb(64, 64, 64);
+}
+QLineEdit {
+	background-color: rgba(90,90,90,255);
+}
+caChoice &gt; QPushButton {
+	text-align: center;
+	padding:	2px;
+	border-style: outset;
+    border-width: 2px;
+    border-color: rgb(160, 160, 160);
+	background-color: rgb(221, 221, 221);
+}
+
+caChoice &gt; QPushButton:checked{
+	text-align: center;
+	padding:	2px;
+	border-style: inset;
+    border-width: 2px;
+    border-color: rgb(160, 160, 160);
+	background-color: rgb(221, 221, 221);
+}</string>
+  </property>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>330</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>$(T) Shutter</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color>
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_44">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>100</y>
+     <width>60</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>----------------------------------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(IOC):SL:STATUS:FREQBEAT</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="alarmHandling">
+    <enum>caLineEdit::onBackground</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>110</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Manufacturer:</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>200</red>
+     <green>200</green>
+     <blue>200</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_57">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Mnfc_RBV</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_58">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Prod_RBV</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>110</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Device:</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>200</red>
+     <green>200</green>
+     <blue>200</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>110</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Serial:</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>200</red>
+     <green>200</green>
+     <blue>200</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_59">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Serial_RBV</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>110</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>USB VID:PID</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>200</red>
+     <green>200</green>
+     <blue>200</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_60">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>170</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)VIDPID_RBV</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Vertical</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Flip</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">1</string>
+   </property>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Blink</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Blink</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">1</string>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_61">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>---------</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Shutter_RBV</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>85</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>160</red>
+     <green>160</green>
+     <blue>164</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Default</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caRelatedDisplay" name="carelateddisplay">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>290</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="labels">
+    <string>ASYN</string>
+   </property>
+   <property name="files">
+    <string>asynRecord.ui</string>
+   </property>
+   <property name="args">
+    <string>P=$(P)$(R),R=asyn</string>
+   </property>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton_3">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>250</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Horizontal</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Flip</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">2</string>
+   </property>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton_4">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>250</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flip</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P)$(R)Flip</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">3</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

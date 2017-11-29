@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(64, 64, 64);</string>
+  </property>
+  <widget class="caLineEdit" name="caleTitle">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string>$(PV).DESC</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(PV).DESC</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Static</enum>
+   </property>
+   <property name="frameColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::string</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="caleStatus_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>600</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Values</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(PV)</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Static</enum>
+   </property>
+   <property name="precision">
+    <number>3</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::exponential</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>601</width>
+     <height>277</height>
+    </rect>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>1 minute</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">seconds</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):1m:X;$(PV):1m</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>5 minutes</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">seconds</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):5m:X;$(PV):5m</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>10 minutes</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">minutes</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):10m:X;$(PV):10m</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>1 hour</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">minutes</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):1h:X;$(PV):1h</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>4 hours</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">minutes</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):4h:X;$(PV):4h</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>10 hours</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">hours</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):10h:X;$(PV):10h</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>1 day</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">hours</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):1d:X;$(PV):1d</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>3 days</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">hours</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):3d:X;$(PV):3d</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>7 days</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>600</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="TitleX">
+      <string notr="true">days</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string notr="true">$(PV):7d:X;$(PV):7d</string>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QFrame</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
