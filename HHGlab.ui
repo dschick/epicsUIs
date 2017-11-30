@@ -836,7 +836,7 @@
    <widget class="caLabel" name="calabel_6">
     <property name="geometry">
      <rect>
-      <x>1003</x>
+      <x>963</x>
       <y>531</y>
       <width>61</width>
       <height>31</height>
@@ -867,9 +867,9 @@
    <widget class="caGraphics" name="sdg">
     <property name="geometry">
      <rect>
-      <x>1000</x>
+      <x>960</x>
       <y>530</y>
-      <width>241</width>
+      <width>281</width>
       <height>121</height>
      </rect>
     </property>
@@ -1187,7 +1187,7 @@
      <enum>caLineEdit::Static</enum>
     </property>
     <property name="precision">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="precisionMode">
      <enum>caLineEdit::User</enum>
@@ -1196,7 +1196,7 @@
      <bool>true</bool>
     </property>
     <property name="formatType">
-     <enum>caLineEdit::engr_notation</enum>
+     <enum>caLineEdit::decimal</enum>
     </property>
    </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_8">
@@ -1527,10 +1527,10 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>1010</x>
+      <x>965</x>
       <y>560</y>
-      <width>221</width>
-      <height>81</height>
+      <width>271</width>
+      <height>82</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -1661,7 +1661,7 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="3">
+     <item row="3" column="5">
       <widget class="caLineEdit" name="calineedit_23">
        <property name="font">
         <font>
@@ -1716,7 +1716,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
+     <item row="2" column="5">
       <widget class="caLineEdit" name="calineedit_22">
        <property name="font">
         <font>
@@ -1771,7 +1771,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="0" column="2">
       <widget class="caLineEdit" name="calineedit_16">
        <property name="font">
         <font>
@@ -1826,7 +1826,7 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
+     <item row="1" column="5">
       <widget class="caLineEdit" name="calineedit_21">
        <property name="font">
         <font>
@@ -1881,7 +1881,7 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
+     <item row="1" column="2">
       <widget class="caLineEdit" name="calineedit_17">
        <property name="font">
         <font>
@@ -1936,7 +1936,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
+     <item row="2" column="2">
       <widget class="caLineEdit" name="calineedit_18">
        <property name="font">
         <font>
@@ -1991,7 +1991,7 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
+     <item row="3" column="2">
       <widget class="caLineEdit" name="calineedit_19">
        <property name="font">
         <font>
@@ -2046,7 +2046,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
+     <item row="0" column="5">
       <widget class="caLineEdit" name="calineedit_20">
        <property name="font">
         <font>
@@ -2101,7 +2101,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
+     <item row="0" column="3">
       <widget class="caLabel" name="calabel_13">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2132,7 +2132,7 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
+     <item row="1" column="3">
       <widget class="caLabel" name="calabel_14">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2163,7 +2163,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="2">
+     <item row="2" column="3">
       <widget class="caLabel" name="calabel_15">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2194,7 +2194,7 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
+     <item row="3" column="3">
       <widget class="caLabel" name="calabel_16">
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2222,6 +2222,414 @@
          <green>255</green>
          <blue>255</blue>
         </color>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="caLed" name="caled_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D1:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="caLed" name="caled_6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D5:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="caLed" name="caled_7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D2:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="caLed" name="caled_9">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D3:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="caLed" name="caled_8">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D4:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="caLed" name="caled_10">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D6:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="caLed" name="caled_12">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D7:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="caLed" name="caled_11">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>12</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>10</number>
+       </property>
+       <property name="ledHeight">
+        <number>10</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">SDG:D8:enabled</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>1</string>
+       </property>
+       <property name="falseValue">
+        <string>0</string>
        </property>
       </widget>
      </item>
@@ -2991,7 +3399,7 @@
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>763</x>
+      <x>713</x>
       <y>565</y>
       <width>211</width>
       <height>81</height>
@@ -3219,7 +3627,7 @@
    <widget class="caGraphics" name="sdg_2">
     <property name="geometry">
      <rect>
-      <x>747</x>
+      <x>697</x>
       <y>530</y>
       <width>241</width>
       <height>121</height>
@@ -3249,7 +3657,7 @@
    <widget class="caLabel" name="calabel_17">
     <property name="geometry">
      <rect>
-      <x>750</x>
+      <x>700</x>
       <y>534</y>
       <width>91</width>
       <height>31</height>

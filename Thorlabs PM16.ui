@@ -783,6 +783,9 @@
    <property name="colorMode">
     <enum>caLineEdit::Alarm_Static</enum>
    </property>
+   <property name="precision">
+    <number>4</number>
+   </property>
    <property name="styleSheet" stdset="0">
     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(160, 160, 164, 0); color: rgba(85, 255, 255, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(121, 121, 121, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(121, 121, 121, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
    </property>
@@ -841,6 +844,9 @@
    </property>
    <property name="colorMode">
     <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>4</number>
    </property>
    <property name="styleSheet" stdset="0">
     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(160, 160, 164, 0); color: rgba(85, 255, 255, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(121, 121, 121, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(121, 121, 121, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
