@@ -928,7 +928,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">SDG:bwd</string>
+     <string notr="true">SDG:bwdError</string>
     </property>
     <property name="falseColor">
      <color>
@@ -938,10 +938,10 @@
      </color>
     </property>
     <property name="trueValue">
-     <string>Error</string>
+     <string>1</string>
     </property>
     <property name="falseValue">
-     <string>Okay</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="caLineEdit" name="calineedit_11">
@@ -5888,7 +5888,7 @@
    <widget class="caLabel" name="calabel_32">
     <property name="geometry">
      <rect>
-      <x>1285</x>
+      <x>1284</x>
       <y>327</y>
       <width>71</width>
       <height>22</height>
