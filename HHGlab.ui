@@ -4554,7 +4554,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PR:SPECTR:TOROID:RP</string>
+     <string notr="true">PR:SPEC:TOROID:RP</string>
     </property>
     <property name="foreground">
      <color>
@@ -4615,7 +4615,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PR:SPECTR:SAMPLE:RP</string>
+     <string notr="true">PR:SPEC:SAMPLE:RP</string>
     </property>
     <property name="foreground">
      <color>
@@ -4676,7 +4676,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PR:SPECTR:GRATING:RP</string>
+     <string notr="true">PR:SPEC:GRATING:RP</string>
     </property>
     <property name="foreground">
      <color>
@@ -5079,7 +5079,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string notr="true">PR:SPECTR:TOROID:RP</string>
+        <string notr="true">PR:SPEC:TOROID:RP</string>
        </property>
        <property name="foreground">
         <color>
@@ -5134,7 +5134,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string notr="true">PR:SPECTR:SAMPLE:RP</string>
+        <string notr="true">PR:SPEC:SAMPLE:RP</string>
        </property>
        <property name="foreground">
         <color>
@@ -5189,7 +5189,7 @@
         <bool>true</bool>
        </property>
        <property name="channel" stdset="0">
-        <string notr="true">PR:SPECTR:GRATING:RP</string>
+        <string notr="true">PR:SPEC:GRATING:RP</string>
        </property>
        <property name="foreground">
         <color>
@@ -5331,7 +5331,7 @@
         <string>GraphixSensor.ui</string>
        </property>
        <property name="args">
-        <string>P=PR,D=SPECTR,R=SAMPLE</string>
+        <string>P=PR,D=SPEC,R=SAMPLE</string>
        </property>
       </widget>
      </item>
@@ -5389,7 +5389,7 @@
         <string>GraphixSensor.ui</string>
        </property>
        <property name="args">
-        <string>P=PR,D=SPECTR,R=GRATING</string>
+        <string>P=PR,D=SPEC,R=GRATING</string>
        </property>
       </widget>
      </item>
@@ -5441,13 +5441,13 @@
         <string notr="true"/>
        </property>
        <property name="labels">
-        <string>SPECTR</string>
+        <string>SPEC</string>
        </property>
        <property name="files">
         <string>Graphix.ui</string>
        </property>
        <property name="args">
-        <string>P=PR,D=SPECTR;</string>
+        <string>P=PR,D=SPEC;</string>
        </property>
       </widget>
      </item>
@@ -5507,7 +5507,7 @@
         <string>GraphixSensor.ui</string>
        </property>
        <property name="args">
-        <string>P=PR,D=SPECTR,R=TOROID</string>
+        <string>P=PR,D=SPEC,R=TOROID</string>
        </property>
       </widget>
      </item>
@@ -6474,6 +6474,34 @@
      <enum>caLineEdit::exponential</enum>
     </property>
    </widget>
+   <widget class="caStripPlot" name="castripplot">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>321</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="channels" stdset="0">
+     <string>HHG:INT:REF:peak1;HHG:INT:REF:peak2</string>
+    </property>
+    <property name="units">
+     <enum>caStripPlot::Second</enum>
+    </property>
+    <property name="period">
+     <double>600.000000000000000</double>
+    </property>
+    <property name="refreshRate" stdset="0">
+     <enum>caStripPlot::High</enum>
+    </property>
+    <property name="XaxisType">
+     <enum>caStripPlot::TimeScale</enum>
+    </property>
+    <property name="YAxisScaling" stdset="0">
+     <enum>caStripPlot::autoScale</enum>
+    </property>
+   </widget>
    <zorder>sdg_2</zorder>
    <zorder>table1</zorder>
    <zorder>table2</zorder>
@@ -6589,9 +6617,15 @@
    <zorder>calabel_33</zorder>
    <zorder>carelateddisplay_19</zorder>
    <zorder>calineedit_34</zorder>
+   <zorder>castripplot</zorder>
   </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
   <customwidget>
    <class>caRelatedDisplay</class>
    <extends>QWidget</extends>
@@ -6631,6 +6665,11 @@
    <class>caLineEdit</class>
    <extends>QLineEdit</extends>
    <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
   </customwidget>
  </customwidgets>
  <resources/>
