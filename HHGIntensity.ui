@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(64, 64, 64);</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>601</width>
+     <height>277</height>
+    </rect>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>9</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>1</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak1</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>2</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak2</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>3</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak3</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>4</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak4</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>5</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak5</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>6</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak6</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>7</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak7</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>8</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak8</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>9</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak9</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_10">
+    <attribute name="title">
+     <string>10</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>591</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:$(P):peak10</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>133</red>
+       <green>190</green>
+       <blue>232</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>601</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HHG Intensity $(T)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
