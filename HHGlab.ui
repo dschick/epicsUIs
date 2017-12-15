@@ -6164,23 +6164,23 @@
    <widget class="caLabel" name="calabel_29">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>471</width>
+      <x>110</x>
+      <y>20</y>
+      <width>221</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>DejaVu Serif</family>
-      <pointsize>21</pointsize>
+      <pointsize>25</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="text">
-     <string>Max Born Institute | B1 HHG Lab</string>
+     <string>B1 HHG Lab</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -6483,7 +6483,7 @@
    <widget class="caStripPlot" name="castripplot">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>880</x>
       <y>10</y>
       <width>321</width>
       <height>161</height>
@@ -6540,6 +6540,25 @@
     </property>
     <property name="colorMode">
      <enum>caToggleButton::Static</enum>
+    </property>
+   </widget>
+   <widget class="caImage" name="caimage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>85</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="filename" stdset="0">
+     <string notr="true">mbi-logo.svg</string>
     </property>
    </widget>
    <zorder>sdg_2</zorder>
@@ -6659,6 +6678,7 @@
    <zorder>castripplot</zorder>
    <zorder>catogglebutton</zorder>
    <zorder>calabel_18</zorder>
+   <zorder>caimage</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -6701,6 +6721,11 @@
    <class>caPolyLine</class>
    <extends>QWidget</extends>
    <header>caPolyLine</header>
+  </customwidget>
+  <customwidget>
+   <class>caImage</class>
+   <extends>QWidget</extends>
+   <header>caImage</header>
   </customwidget>
   <customwidget>
    <class>caLed</class>
