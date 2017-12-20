@@ -29,7 +29,7 @@
     <enum>QTabWidget::Rounded</enum>
    </property>
    <property name="currentIndex">
-    <number>9</number>
+    <number>0</number>
    </property>
    <property name="documentMode">
     <bool>true</bool>
@@ -52,6 +52,9 @@
      </property>
      <property name="period">
       <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
      </property>
      <property name="foreground">
       <color alpha="0">
@@ -88,6 +91,9 @@
      <property name="period">
       <double>600.000000000000000</double>
      </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
      <property name="foreground">
       <color alpha="0">
        <red>133</red>
@@ -122,6 +128,9 @@
      </property>
      <property name="period">
       <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
      </property>
      <property name="foreground">
       <color alpha="0">
@@ -158,6 +167,9 @@
      <property name="period">
       <double>600.000000000000000</double>
      </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
      <property name="foreground">
       <color alpha="0">
        <red>133</red>
@@ -192,6 +204,9 @@
      </property>
      <property name="period">
       <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
      </property>
      <property name="foreground">
       <color alpha="0">
@@ -228,6 +243,9 @@
      <property name="period">
       <double>600.000000000000000</double>
      </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
      <property name="foreground">
       <color alpha="0">
        <red>133</red>
@@ -262,6 +280,9 @@
      </property>
      <property name="period">
       <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
      </property>
      <property name="foreground">
       <color alpha="0">
@@ -298,6 +319,9 @@
      <property name="period">
       <double>600.000000000000000</double>
      </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
      <property name="foreground">
       <color alpha="0">
        <red>133</red>
@@ -333,6 +357,9 @@
      <property name="period">
       <double>600.000000000000000</double>
      </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
      <property name="foreground">
       <color alpha="0">
        <red>133</red>
@@ -367,6 +394,9 @@
      </property>
      <property name="period">
       <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
      </property>
      <property name="foreground">
       <color alpha="0">

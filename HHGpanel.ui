@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: rgb(80, 80, 80);
+	font-color: #FFFFFF;
+}
+
+QTabWidget {
+	font-color: #FFFFFF;
+}</string>
+  </property>
+  <widget class="caCartesianPlot" name="cacartesianplot">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>1181</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="Title" stdset="0">
+    <string notr="true">HHG Spectra</string>
+   </property>
+   <property name="TitleX">
+    <string notr="true">Wavelength</string>
+   </property>
+   <property name="TitleY">
+    <string notr="true">Intensity</string>
+   </property>
+   <property name="channels_1" stdset="0">
+    <string>HHG:SPECTRUM:SPEC:wl;HHG:SPECTRUM:SPEC:int</string>
+   </property>
+   <property name="symbol_1">
+    <enum>caCartesianPlot::NoSymbol</enum>
+   </property>
+   <property name="color_1">
+    <color>
+     <red>170</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="channels_2" stdset="0">
+    <string>HHG:SPECTRUM:REF:wl;HHG:SPECTRUM:REF:int</string>
+   </property>
+   <property name="color_2">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="foreground">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="scaleColor">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="XaxisScaling" stdset="0">
+    <enum>caCartesianPlot::User</enum>
+   </property>
+   <property name="XaxisLimits">
+    <string>0;1024</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_29">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>29</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>HHG Panel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_33">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>10</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <pointsize>9</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>-.-e--- mBar</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">HHG:GASCELL:pressure</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Static</enum>
+   </property>
+   <property name="precision">
+    <number>2</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::WidthAndHeight</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_32">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <pointsize>9</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>-.-e--- mBar</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">PR:FRONTEND:HHG:RP</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Static</enum>
+   </property>
+   <property name="precision">
+    <number>1</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::User</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::exponential</enum>
+   </property>
+  </widget>
+  <widget class="caToggleButton" name="catogglebutton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>10</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Enable PID</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">HHG:GASCELL:pidEnabled</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caToggleButton::Static</enum>
+   </property>
+  </widget>
+  <widget class="caLed" name="caled_14">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>13</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="rectangular">
+    <bool>true</bool>
+   </property>
+   <property name="ledWidth">
+    <number>15</number>
+   </property>
+   <property name="ledHeight">
+    <number>15</number>
+   </property>
+   <property name="linearGradient">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">HHG:GASCELL:pidEnabled</string>
+   </property>
+   <property name="falseColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="trueColor">
+    <color>
+     <red>0</red>
+     <green>170</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="trueValue">
+    <string>On</string>
+   </property>
+   <property name="falseValue">
+    <string>Off</string>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_23">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>8</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>HHG chamber:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_24">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>10</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>gas cell:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>310</y>
+     <width>1181</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>9</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Peak 1</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak1;HHG:INT:SPEC:peak1</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Peak 2</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak2;HHG:INT:SPEC:peak2</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Peak 3</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak3;HHG:INT:SPEC:peak3</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Peak 4</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak4;HHG:INT:SPEC:peak4</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Peak 5</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak5;HHG:INT:SPEC:peak5</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>Peak 6</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak6;HHG:INT:SPEC:peak6</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>Peak 7</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak7;HHG:INT:SPEC:peak7</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>Peak 8</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak8;HHG:INT:SPEC:peak8</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>Peak 9</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak9;HHG:INT:SPEC:peak9</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_10">
+    <attribute name="title">
+     <string>Peak 10</string>
+    </attribute>
+    <widget class="caStripPlot" name="castripplot_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1161</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REF:peak10;HHG:INT:SPEC:peak10</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
