@@ -451,7 +451,7 @@ QTabWidget {
     <rect>
      <x>10</x>
      <y>310</y>
-     <width>1161</width>
+     <width>1181</width>
      <height>591</height>
     </rect>
    </property>
@@ -486,7 +486,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -522,8 +522,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_40">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -561,8 +561,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_41">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -602,7 +602,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -638,8 +638,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_43">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -684,7 +684,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -720,8 +720,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_38">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -759,8 +759,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_39">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -800,7 +800,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -836,8 +836,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_44">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -882,7 +882,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -918,8 +918,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_36">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -957,8 +957,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_37">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -998,7 +998,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -1034,8 +1034,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_45">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1080,7 +1080,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -1116,8 +1116,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_34">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1155,8 +1155,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_35">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1196,7 +1196,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -1232,8 +1232,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_46">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1278,7 +1278,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -1314,8 +1314,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_32">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1353,8 +1353,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_33">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1394,7 +1394,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -1430,8 +1430,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_47">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1476,7 +1476,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -1512,8 +1512,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_30">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1551,8 +1551,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_31">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1592,7 +1592,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -1628,8 +1628,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_48">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1674,7 +1674,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -1710,8 +1710,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_28">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1749,8 +1749,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_29">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1790,7 +1790,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -1826,8 +1826,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_49">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1872,7 +1872,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -1908,8 +1908,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_26">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1947,8 +1947,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_27">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -1988,7 +1988,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -2024,8 +2024,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_50">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2070,7 +2070,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -2106,8 +2106,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_24">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2145,8 +2145,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_25">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2186,7 +2186,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -2222,8 +2222,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_42">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2268,7 +2268,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>331</height>
       </rect>
      </property>
@@ -2304,8 +2304,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_22">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>910</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2343,8 +2343,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_23">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>310</y>
+       <x>1000</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2384,7 +2384,7 @@ QTabWidget {
       <rect>
        <x>10</x>
        <y>350</y>
-       <width>1161</width>
+       <width>1191</width>
        <height>201</height>
       </rect>
      </property>
@@ -2420,8 +2420,8 @@ QTabWidget {
     <widget class="caRelatedDisplay" name="cardPR1_51">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>310</y>
+       <x>1090</x>
+       <y>320</y>
        <width>80</width>
        <height>30</height>
       </rect>
@@ -2461,7 +2461,7 @@ QTabWidget {
   <widget class="caMessageButton" name="camessagebutton">
    <property name="geometry">
     <rect>
-     <x>860</x>
+     <x>980</x>
      <y>10</y>
      <width>100</width>
      <height>22</height>
@@ -2480,7 +2480,7 @@ QTabWidget {
   <widget class="caMessageButton" name="camessagebutton_2">
    <property name="geometry">
     <rect>
-     <x>1050</x>
+     <x>1090</x>
      <y>10</y>
      <width>100</width>
      <height>22</height>
