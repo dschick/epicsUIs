@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1200</width>
-    <height>700</height>
+    <height>912</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,23 +51,49 @@ QTabWidget {
     <string notr="true">Intensity</string>
    </property>
    <property name="channels_1" stdset="0">
-    <string>HHG:SPECTRUM:SPEC:wl;HHG:SPECTRUM:SPEC:int</string>
+    <string>HHG:SPECTRUM:SPEC:wl;HHG:SPECTRUM:SPEC:snap</string>
+   </property>
+   <property name="Style_1">
+    <enum>caCartesianPlot::Lines</enum>
    </property>
    <property name="symbol_1">
     <enum>caCartesianPlot::NoSymbol</enum>
    </property>
    <property name="color_1">
     <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="channels_2" stdset="0">
+    <string>HHG:SPECTRUM:REF:wl;HHG:SPECTRUM:REF:snap</string>
+   </property>
+   <property name="Style_2">
+    <enum>caCartesianPlot::Lines</enum>
+   </property>
+   <property name="color_2">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="channels_3" stdset="0">
+    <string>HHG:SPECTRUM:SPEC:wl;HHG:SPECTRUM:SPEC:int</string>
+   </property>
+   <property name="color_3">
+    <color alpha="200">
      <red>170</red>
      <green>0</green>
      <blue>0</blue>
     </color>
    </property>
-   <property name="channels_2" stdset="0">
+   <property name="channels_4" stdset="0">
     <string>HHG:SPECTRUM:REF:wl;HHG:SPECTRUM:REF:int</string>
    </property>
-   <property name="color_2">
-    <color>
+   <property name="color_4">
+    <color alpha="200">
      <red>255</red>
      <green>255</green>
      <blue>255</blue>
@@ -425,8 +451,8 @@ QTabWidget {
     <rect>
      <x>10</x>
      <y>310</y>
-     <width>1181</width>
-     <height>381</height>
+     <width>1161</width>
+     <height>591</height>
     </rect>
    </property>
    <property name="font">
@@ -493,6 +519,161 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_40">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak1</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_41">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak1</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak1</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_43">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak1</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
@@ -534,6 +715,161 @@ QTabWidget {
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_38">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak2</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_39">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak2</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak2</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_44">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak2</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
      </property>
     </widget>
    </widget>
@@ -579,6 +915,161 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_36">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak3</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_37">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak3</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak3</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_45">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak3</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_4">
     <attribute name="title">
@@ -620,6 +1111,161 @@ QTabWidget {
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_34">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak4</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak4</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak4</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_46">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak4</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
      </property>
     </widget>
    </widget>
@@ -665,6 +1311,161 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_32">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak5</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_33">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak5</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak5</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_47">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak5</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_6">
     <attribute name="title">
@@ -706,6 +1507,161 @@ QTabWidget {
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_30">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak6</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak6</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak6</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_48">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak6</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
      </property>
     </widget>
    </widget>
@@ -751,6 +1707,161 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_28">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak7</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak7</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak7</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_49">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak7</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_8">
     <attribute name="title">
@@ -792,6 +1903,161 @@ QTabWidget {
        <green>255</green>
        <blue>255</blue>
       </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_26">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak8</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak8</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_19">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak8</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_50">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak8</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
      </property>
     </widget>
    </widget>
@@ -837,6 +2103,161 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak9</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_25">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak9</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak9</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_42">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak9</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_10">
     <attribute name="title">
@@ -880,7 +2301,200 @@ QTabWidget {
       </color>
      </property>
     </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History SPEC</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:SPEC:peak10</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_23">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REF</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REF:peak10</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
+    <widget class="caStripPlot" name="castripplot_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>1161</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="channels" stdset="0">
+      <string>HHG:INT:REL:peak10</string>
+     </property>
+     <property name="period">
+      <double>600.000000000000000</double>
+     </property>
+     <property name="YAxisScaling" stdset="0">
+      <enum>caStripPlot::autoScale</enum>
+     </property>
+     <property name="YaxisScalingMin_2" stdset="0">
+      <enum>caStripPlot::Channel</enum>
+     </property>
+     <property name="Style_3">
+      <enum>caStripPlot::Lines</enum>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+    <widget class="caRelatedDisplay" name="cardPR1_51">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="label">
+      <string notr="true">Hisotry</string>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="background">
+      <color>
+       <red>221</red>
+       <green>221</green>
+       <blue>221</blue>
+      </color>
+     </property>
+     <property name="labels">
+      <string notr="true">History REL</string>
+     </property>
+     <property name="files">
+      <string notr="true">PV_History.ui</string>
+     </property>
+     <property name="args">
+      <string notr="true">PV=HHG:INT:REL:peak10</string>
+     </property>
+     <property name="stackingMode" stdset="0">
+      <enum>caRowColMenu::Column</enum>
+     </property>
+    </widget>
    </widget>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>10</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">HHG:SPECTRUM:SPEC:snap.PROC</string>
+   </property>
+   <property name="label">
+    <string notr="true">Snap SPEC</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">1</string>
+   </property>
+  </widget>
+  <widget class="caMessageButton" name="camessagebutton_2">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>10</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">HHG:SPECTRUM:REF:snap.PROC</string>
+   </property>
+   <property name="label">
+    <string notr="true">Snap REF</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">1</string>
+   </property>
   </widget>
  </widget>
  <customwidgets>
@@ -888,6 +2502,16 @@ QTabWidget {
    <class>QwtPlot</class>
    <extends>QFrame</extends>
    <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caToggleButton</class>
