@@ -3372,7 +3372,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">HHG:GASCELL:pressure</string>
+     <string notr="true">HHG:GASCELL:RP</string>
     </property>
     <property name="foreground">
      <color>
