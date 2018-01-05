@@ -4270,8 +4270,8 @@
    <widget class="caToggleButton" name="catogglebutton">
     <property name="geometry">
      <rect>
-      <x>683</x>
-      <y>335</y>
+      <x>910</x>
+      <y>430</y>
       <width>101</width>
       <height>22</height>
      </rect>
@@ -6872,6 +6872,42 @@
      <string>1</string>
     </property>
    </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_22">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>350</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Gascell.ui</string>
+    </property>
+    <property name="args">
+     <string>P=HHG,R=GASCELL</string>
+    </property>
+   </widget>
    <zorder>table1</zorder>
    <zorder>table2</zorder>
    <zorder>legend</zorder>
@@ -6989,6 +7025,7 @@
    <zorder>catextentry_6</zorder>
    <zorder>catogglebutton_2</zorder>
    <zorder>caled_15</zorder>
+   <zorder>carelateddisplay_22</zorder>
   </widget>
  </widget>
  <customwidgets>
