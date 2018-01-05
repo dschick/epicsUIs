@@ -4267,40 +4267,6 @@
      <enum>caLineEdit::exponential</enum>
     </property>
    </widget>
-   <widget class="caToggleButton" name="catogglebutton">
-    <property name="geometry">
-     <rect>
-      <x>910</x>
-      <y>430</y>
-      <width>101</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Enable PID</string>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">HHG:GASCELL:pidEnabled</string>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>40</red>
-      <green>40</green>
-      <blue>40</blue>
-     </color>
-    </property>
-    <property name="colorMode">
-     <enum>caToggleButton::Static</enum>
-    </property>
-   </widget>
    <widget class="caImage" name="caimage">
     <property name="geometry">
      <rect>
@@ -6672,206 +6638,6 @@
      </layout>
     </widget>
    </widget>
-   <widget class="caTextEntry" name="catextentry_5">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>410</y>
-      <width>101</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">HHG:GASCELL:SPuser</string>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>85</red>
-      <green>255</green>
-      <blue>255</blue>
-     </color>
-    </property>
-    <property name="background">
-     <color alpha="0">
-      <red>160</red>
-      <green>160</green>
-      <blue>164</blue>
-     </color>
-    </property>
-    <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
-    </property>
-    <property name="precision">
-     <number>2</number>
-    </property>
-    <property name="precisionMode">
-     <enum>caLineEdit::User</enum>
-    </property>
-    <property name="limitsMode">
-     <enum>caLineEdit::User</enum>
-    </property>
-    <property name="maxValue">
-     <double>1000.000000000000000</double>
-    </property>
-    <property name="fontScaleMode" stdset="0">
-     <enum>caLineEdit::None</enum>
-    </property>
-    <property name="styleSheet" stdset="0">
-     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(160, 160, 164, 0); color: rgba(85, 255, 255, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(80, 80, 82, 0) rgba(240, 240, 246, 0)  rgba(240, 240, 246, 0) rgba(80, 80, 82, 0);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
-    </property>
-   </widget>
-   <widget class="caTextEntry" name="catextentry_6">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>430</y>
-      <width>101</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <family>Monospace</family>
-      <pointsize>12</pointsize>
-      <stylestrategy>PreferDefault</stylestrategy>
-     </font>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">PR:FRONTEND:HHG:RP.HOPR</string>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>85</red>
-      <green>255</green>
-      <blue>255</blue>
-     </color>
-    </property>
-    <property name="background">
-     <color alpha="0">
-      <red>160</red>
-      <green>160</green>
-      <blue>164</blue>
-     </color>
-    </property>
-    <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
-    </property>
-    <property name="precision">
-     <number>2</number>
-    </property>
-    <property name="precisionMode">
-     <enum>caLineEdit::User</enum>
-    </property>
-    <property name="limitsMode">
-     <enum>caLineEdit::User</enum>
-    </property>
-    <property name="maxValue">
-     <double>1000.000000000000000</double>
-    </property>
-    <property name="fontScaleMode" stdset="0">
-     <enum>caLineEdit::None</enum>
-    </property>
-    <property name="formatType">
-     <enum>caLineEdit::exponential</enum>
-    </property>
-    <property name="styleSheet" stdset="0">
-     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(160, 160, 164, 0); color: rgba(85, 255, 255, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(80, 80, 82, 0) rgba(240, 240, 246, 0)  rgba(240, 240, 246, 0) rgba(80, 80, 82, 0);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
-    </property>
-   </widget>
-   <widget class="caToggleButton" name="catogglebutton_2">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>460</y>
-      <width>101</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Shutter Control</string>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">HHG:GASCELL:shutterControl</string>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>40</red>
-      <green>40</green>
-      <blue>40</blue>
-     </color>
-    </property>
-    <property name="colorMode">
-     <enum>caToggleButton::Static</enum>
-    </property>
-   </widget>
-   <widget class="caLed" name="caled_15">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>420</y>
-      <width>17</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="rectangular">
-     <bool>true</bool>
-    </property>
-    <property name="ledWidth">
-     <number>15</number>
-    </property>
-    <property name="ledHeight">
-     <number>15</number>
-    </property>
-    <property name="linearGradient">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">HHG:GASCELL:PRalarm</string>
-    </property>
-    <property name="falseColor">
-     <color>
-      <red>0</red>
-      <green>170</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="trueColor">
-     <color>
-      <red>255</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="trueValue">
-     <string>0</string>
-    </property>
-    <property name="falseValue">
-     <string>1</string>
-    </property>
-   </widget>
    <widget class="caRelatedDisplay" name="carelateddisplay_22">
     <property name="geometry">
      <rect>
@@ -7013,7 +6779,6 @@
    <zorder>calabel_33</zorder>
    <zorder>carelateddisplay_19</zorder>
    <zorder>calineedit_34</zorder>
-   <zorder>catogglebutton</zorder>
    <zorder>calabel_18</zorder>
    <zorder>caimage</zorder>
    <zorder>carelateddisplay_24</zorder>
@@ -7021,10 +6786,6 @@
    <zorder>groupBox</zorder>
    <zorder>groupBox_2</zorder>
    <zorder>groupBox_3</zorder>
-   <zorder>catextentry_5</zorder>
-   <zorder>catextentry_6</zorder>
-   <zorder>catogglebutton_2</zorder>
-   <zorder>caled_15</zorder>
    <zorder>carelateddisplay_22</zorder>
   </widget>
  </widget>
@@ -7040,19 +6801,9 @@
    <header>caRelatedDisplay</header>
   </customwidget>
   <customwidget>
-   <class>caTextEntry</class>
-   <extends>caLineEdit</extends>
-   <header>caTextEntry</header>
-  </customwidget>
-  <customwidget>
    <class>caMessageButton</class>
    <extends>QPushButton</extends>
    <header>caMessageButton</header>
-  </customwidget>
-  <customwidget>
-   <class>caToggleButton</class>
-   <extends>QCheckBox</extends>
-   <header>caToggleButton</header>
   </customwidget>
   <customwidget>
    <class>caLabel</class>
