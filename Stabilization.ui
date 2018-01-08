@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+	background-color: rgb(64, 64, 64);
+}</string>
+  </property>
+  <widget class="caLabel" name="calabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Laser Stabilization</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_25">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DET1 X mean | std:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="fontScaleMode">
+    <enum>ESimpleLabel::None</enum>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_12">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET1:X:mean</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caRelatedDisplay" name="cardPR1_22">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>561</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="label">
+    <string notr="true">History</string>
+   </property>
+   <property name="foreground">
+    <color>
+     <red>0</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="background">
+    <color>
+     <red>221</red>
+     <green>221</green>
+     <blue>221</blue>
+    </color>
+   </property>
+   <property name="labels">
+    <string notr="true">$(P):DET1:X:mean;$(P):DET1:Y:mean;$(P):DET2:X:mean;$(P):DET2:Y:mean;$(P):DET1:X:std;$(P):DET1:Y:std;$(P):DET2:X:std;$(P):DET2:Y:std</string>
+   </property>
+   <property name="files">
+    <string notr="true">PV_History.ui;PV_History.ui;PV_History.ui;PV_History.ui;PV_History.ui;PV_History.ui;PV_History.ui;PV_History.ui</string>
+   </property>
+   <property name="args">
+    <string notr="true">PV=$(P):DET1:X:mean;PV=$(P):DET1:Y:mean;PV=$(P):DET2:X:mean;PV=$(P):DET2:Y:mean;PV=$(P):DET1:X:std;PV=$(P):DET1:Y:std;PV=$(P):DET2:X:std;PV=$(P):DET2:Y:std</string>
+   </property>
+   <property name="stackingMode" stdset="0">
+    <enum>caRowColMenu::Menu</enum>
+   </property>
+   <property name="elevation">
+    <enum>caRelatedDisplay::on_top</enum>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_26">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DET1 Y mean | std:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="fontScaleMode">
+    <enum>ESimpleLabel::None</enum>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_27">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DET2 X mean | std:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="fontScaleMode">
+    <enum>ESimpleLabel::None</enum>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLabel" name="calabel_28">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>171</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DET2 Y mean | std:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="fontScaleMode">
+    <enum>ESimpleLabel::None</enum>
+   </property>
+   <property name="background">
+    <color>
+     <red>164</red>
+     <green>160</green>
+     <blue>160</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_13">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>60</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET1:X:std</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_14">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>90</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET1:Y:std</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_15">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET1:Y:mean</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_16">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>120</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET2:X:std</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_17">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>120</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET2:X:mean</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_18">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>150</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET2:Y:std</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="caLineEdit" name="calineedit_19">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>150</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>value</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">$(P):DET2:Y:mean</string>
+   </property>
+   <property name="background">
+    <color alpha="0">
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="colorMode">
+    <enum>caLineEdit::Alarm_Static</enum>
+   </property>
+   <property name="precision">
+    <number>6</number>
+   </property>
+   <property name="precisionMode">
+    <enum>caLineEdit::Channel</enum>
+   </property>
+   <property name="fontScaleMode" stdset="0">
+    <enum>caLineEdit::None</enum>
+   </property>
+   <property name="unitsEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="formatType">
+    <enum>caLineEdit::decimal</enum>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>230</y>
+     <width>561</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: none;</string>
+   </property>
+   <property name="currentIndex">
+    <number>8</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>1 minute</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:1m;HHG:LASER:STABIL:DET1:Y:mean:1m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:1m;HHG:LASER:STABIL:DET2:Y:mean:1m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>5 minute</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:5m;HHG:LASER:STABIL:DET2:Y:mean:5m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:5m;HHG:LASER:STABIL:DET1:Y:mean:5m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>10 minute</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_6">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:10m;HHG:LASER:STABIL:DET2:Y:mean:10m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:10m;HHG:LASER:STABIL:DET1:Y:mean:10m</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>1 hour</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:1h;HHG:LASER:STABIL:DET2:Y:mean:1h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:1h;HHG:LASER:STABIL:DET1:Y:mean:1h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>4 hours</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_10">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:4h;HHG:LASER:STABIL:DET2:Y:mean:4h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_11">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:4h;HHG:LASER:STABIL:DET1:Y:mean:4h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>10 hours</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_12">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:10h;HHG:LASER:STABIL:DET2:Y:mean:10h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_13">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:10h;HHG:LASER:STABIL:DET1:Y:mean:10h</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>1 day</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_14">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:1d;HHG:LASER:STABIL:DET2:Y:mean:1d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_15">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:1d;HHG:LASER:STABIL:DET1:Y:mean:1d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>3 days</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_16">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:3d;HHG:LASER:STABIL:DET2:Y:mean:3d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_17">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:3d;HHG:LASER:STABIL:DET1:Y:mean:3d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>7 days</string>
+    </attribute>
+    <widget class="caCartesianPlot" name="cacartesianplot_18">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET2</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET2:X:mean:7d;HHG:LASER:STABIL:DET2:Y:mean:7d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+    <widget class="caCartesianPlot" name="cacartesianplot_19">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="Title" stdset="0">
+      <string notr="true">DET1</string>
+     </property>
+     <property name="TitleX">
+      <string notr="true">X</string>
+     </property>
+     <property name="TitleY">
+      <string notr="true">Y</string>
+     </property>
+     <property name="channels_1" stdset="0">
+      <string>HHG:LASER:STABIL:DET1:X:mean:7d;HHG:LASER:STABIL:DET1:Y:mean:7d</string>
+     </property>
+     <property name="Style_1">
+      <enum>caCartesianPlot::Lines</enum>
+     </property>
+     <property name="symbol_1">
+      <enum>caCartesianPlot::Cross</enum>
+     </property>
+     <property name="color_1">
+      <color>
+       <red>170</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <color alpha="0">
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="scaleColor">
+      <color>
+       <red>40</red>
+       <green>40</green>
+       <blue>40</blue>
+      </color>
+     </property>
+     <property name="XaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="YaxisScaling" stdset="0">
+      <enum>caCartesianPlot::User</enum>
+     </property>
+     <property name="XaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+     <property name="YaxisLimits">
+      <string>-.1;.1</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caRelatedDisplay</class>
+   <extends>QWidget</extends>
+   <header>caRelatedDisplay</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caCartesianPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caCartesianPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
