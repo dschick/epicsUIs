@@ -2888,7 +2888,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -2994,7 +2994,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -3055,7 +3055,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -3116,7 +3116,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -3177,7 +3177,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -3238,7 +3238,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
@@ -3299,7 +3299,7 @@
      </color>
     </property>
     <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
+     <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="precision">
      <number>1</number>
