@@ -63,7 +63,7 @@
     <property name="geometry">
      <rect>
       <x>1320</x>
-      <y>480</y>
+      <y>450</y>
       <width>90</width>
       <height>28</height>
      </rect>
@@ -428,36 +428,6 @@
     </property>
     <property name="xyPairs" stdset="0">
      <string notr="true">0,0;0,95</string>
-    </property>
-   </widget>
-   <widget class="caGraphics" name="attenuator">
-    <property name="geometry">
-     <rect>
-      <x>1280</x>
-      <y>300</y>
-      <width>81</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>40</red>
-      <green>40</green>
-      <blue>40</blue>
-     </color>
-    </property>
-    <property name="fillstyle" stdset="0">
-     <enum>caGraphics::Filled</enum>
-    </property>
-    <property name="lineSize">
-     <number>1</number>
-    </property>
-    <property name="lineColor">
-     <color>
-      <red>207</red>
-      <green>207</green>
-      <blue>207</blue>
-     </color>
     </property>
    </widget>
    <widget class="caPolyLine" name="capolyline_3">
@@ -980,108 +950,11 @@
      <string>P=PM:,R=REVO:,T=Revolution</string>
     </property>
    </widget>
-   <widget class="caLineEdit" name="calineedit_12">
-    <property name="geometry">
-     <rect>
-      <x>1284</x>
-      <y>327</y>
-      <width>71</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Monospace</family>
-      <pointsize>12</pointsize>
-      <stylestrategy>PreferDefault</stylestrategy>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="text">
-     <string>----</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">PM:ATTENUATOR:MEAS:POW</string>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>0</red>
-      <green>255</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="background">
-     <color alpha="0">
-      <red>255</red>
-      <green>255</green>
-      <blue>255</blue>
-     </color>
-    </property>
-    <property name="colorMode">
-     <enum>caLineEdit::Static</enum>
-    </property>
-    <property name="precision">
-     <number>3</number>
-    </property>
-    <property name="precisionMode">
-     <enum>caLineEdit::User</enum>
-    </property>
-    <property name="unitsEnabled">
-     <bool>true</bool>
-    </property>
-    <property name="formatType">
-     <enum>caLineEdit::engr_notation</enum>
-    </property>
-   </widget>
-   <widget class="caRelatedDisplay" name="carelateddisplay_7">
-    <property name="geometry">
-     <rect>
-      <x>1337</x>
-      <y>304</y>
-      <width>20</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>10</width>
-      <height>10</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="labels">
-     <string/>
-    </property>
-    <property name="files">
-     <string>Thorlabs PM16.ui</string>
-    </property>
-    <property name="args">
-     <string>P=PM:,R=ATTENUATOR:,T=Attenuator</string>
-    </property>
-   </widget>
    <widget class="caLineEdit" name="calineedit_13">
     <property name="geometry">
      <rect>
       <x>1337</x>
-      <y>416</y>
+      <y>532</y>
       <width>80</width>
       <height>20</height>
      </rect>
@@ -1106,7 +979,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PM:LEGENDCOMP:MEAS:POW</string>
+     <string notr="true">PM:LEGEND:MEAS:POW</string>
     </property>
     <property name="foreground">
      <color>
@@ -1142,7 +1015,7 @@
     <property name="geometry">
      <rect>
       <x>1310</x>
-      <y>416</y>
+      <y>532</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -1171,7 +1044,7 @@
      <string>Thorlabs PM16.ui</string>
     </property>
     <property name="args">
-     <string>P=PM:,R=LEGENDCOMP:,T=Legend Compressor</string>
+     <string>P=PM:,R=LEGEND:,T=Legend</string>
     </property>
    </widget>
    <widget class="caLabel" name="calabel_4">
@@ -1193,43 +1066,6 @@
     </property>
     <property name="text">
      <string>COMPRESSOR</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>255</red>
-      <green>255</green>
-      <blue>255</blue>
-     </color>
-    </property>
-   </widget>
-   <widget class="caLabel" name="calabel_5">
-    <property name="geometry">
-     <rect>
-      <x>1295</x>
-      <y>299</y>
-      <width>41</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>ATT.</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1271,7 +1107,7 @@
     <property name="geometry">
      <rect>
       <x>1347</x>
-      <y>440</y>
+      <y>415</y>
       <width>70</width>
       <height>20</height>
      </rect>
@@ -1338,7 +1174,7 @@
     <property name="geometry">
      <rect>
       <x>1306</x>
-      <y>443</y>
+      <y>418</y>
       <width>41</width>
       <height>16</height>
      </rect>
@@ -1467,7 +1303,7 @@
     <property name="geometry">
      <rect>
       <x>1315</x>
-      <y>510</y>
+      <y>480</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -1503,7 +1339,7 @@
     <property name="geometry">
      <rect>
       <x>1340</x>
-      <y>510</y>
+      <y>480</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -1564,7 +1400,7 @@
     <property name="geometry">
      <rect>
       <x>1340</x>
-      <y>530</y>
+      <y>500</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -4037,7 +3873,7 @@
     <property name="geometry">
      <rect>
       <x>1332</x>
-      <y>414</y>
+      <y>530</y>
       <width>91</width>
       <height>22</height>
      </rect>
@@ -4083,60 +3919,7 @@
      <string notr="true">A &lt; 0.00000001</string>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PM:LEGENDCOMP:MEAS:POW</string>
-    </property>
-   </widget>
-   <widget class="caLabel" name="calabel_32">
-    <property name="geometry">
-     <rect>
-      <x>1284</x>
-      <y>327</y>
-      <width>71</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Off</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="foreground">
-     <color>
-      <red>0</red>
-      <green>255</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="background">
-     <color>
-      <red>40</red>
-      <green>40</green>
-      <blue>40</blue>
-     </color>
-    </property>
-    <property name="visibility">
-     <enum>caLabel::Calc</enum>
-    </property>
-    <property name="visibilityCalc">
-     <string notr="true">A &lt; 0.000000001</string>
-    </property>
-    <property name="channel" stdset="0">
-     <string notr="true">PM:ATTENUATOR:MEAS:POW</string>
+     <string notr="true">PM:LEGEND:MEAS:POW</string>
     </property>
    </widget>
    <widget class="caLabel" name="calabel_33">
@@ -6704,10 +6487,6 @@
    <zorder>capolyline_8</zorder>
    <zorder>capolyline_11</zorder>
    <zorder>capolyline_12</zorder>
-   <zorder>attenuator</zorder>
-   <zorder>calabel_5</zorder>
-   <zorder>calineedit_12</zorder>
-   <zorder>carelateddisplay_7</zorder>
    <zorder>caled_2</zorder>
    <zorder>camessagebutton_2</zorder>
    <zorder>capolyline_9</zorder>
@@ -6762,7 +6541,6 @@
    <zorder>calabel_29</zorder>
    <zorder>calabel_30</zorder>
    <zorder>calabel_31</zorder>
-   <zorder>calabel_32</zorder>
    <zorder>calabel_33</zorder>
    <zorder>carelateddisplay_19</zorder>
    <zorder>calineedit_34</zorder>
