@@ -1899,7 +1899,13 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,125;123,125;115,120;100,120;100,97;30,97;</string>
+     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;
+165,60;
+165,70;
+140,70;
+140,80;
+165,80;
+165,125;123,125;115,120;100,120;100,97;30,97</string>
     </property>
     <property name="fillstyle" stdset="0">
      <enum>caPolyLine::Outline</enum>
@@ -6853,7 +6859,7 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">165,60;0,60; 0,75; 40,75; 50,80;60,80;70,75;110,75;110,85;30,97;70,105;70,110;200,110</string>
+     <string notr="true">165,60;0,60;0,75;40,75;50,80;60,80;70,75;110,75;110,85;30,97;70,105;70,110;200,110</string>
     </property>
     <property name="fillstyle" stdset="0">
      <enum>caPolyLine::Outline</enum>
@@ -7075,7 +7081,23 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,125;123,125;115,120;100,120;100,97;85,97</string>
+     <string notr="true">297,216;
+297,13;
+270,13;
+270,30;
+285,30;
+285,60;
+165,60;
+165,70;
+140,70;
+140,80;
+165,80;
+165,125;
+123,125;
+115,120;
+100,120;
+100,97;
+85,97</string>
     </property>
     <property name="fillstyle" stdset="0">
      <enum>caPolyLine::Outline</enum>
@@ -7181,6 +7203,36 @@
     </property>
     <property name="channelB">
      <string notr="true">SHUTTER:MOKE:Flip_RBV</string>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="nopa_2">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>215</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>40</red>
+      <green>40</green>
+      <blue>40</blue>
+     </color>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Filled</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>207</red>
+      <green>207</green>
+      <blue>207</blue>
+     </color>
     </property>
    </widget>
    <zorder>table1</zorder>
@@ -7290,13 +7342,11 @@
    <zorder>capolyline_5</zorder>
    <zorder>caled_3</zorder>
    <zorder>camessagebutton_3</zorder>
-   <zorder>capolyline_10</zorder>
    <zorder>capolyline_12</zorder>
    <zorder>capolyline_17</zorder>
    <zorder>compressor_2</zorder>
    <zorder>compressor_4</zorder>
    <zorder>capolyline_3</zorder>
-   <zorder>capolyline_18</zorder>
    <zorder>capolyline_4</zorder>
    <zorder>capolyline_19</zorder>
    <zorder>capolyline_20</zorder>
@@ -7308,6 +7358,9 @@
    <zorder>caled_13</zorder>
    <zorder>camessagebutton_4</zorder>
    <zorder>compressor_3</zorder>
+   <zorder>nopa_2</zorder>
+   <zorder>capolyline_10</zorder>
+   <zorder>capolyline_18</zorder>
   </widget>
  </widget>
  <customwidgets>
