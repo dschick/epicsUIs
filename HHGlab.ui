@@ -283,9 +283,9 @@
    <widget class="caGraphics" name="nopa">
     <property name="geometry">
      <rect>
-      <x>1370</x>
+      <x>1380</x>
       <y>120</y>
-      <width>51</width>
+      <width>41</width>
       <height>231</height>
      </rect>
     </property>
@@ -313,7 +313,7 @@
    <widget class="caLabelVertical" name="calabelvertical_2">
     <property name="geometry">
      <rect>
-      <x>1380</x>
+      <x>1390</x>
       <y>180</y>
       <width>28</width>
       <height>90</height>
@@ -363,7 +363,7 @@
    <widget class="caPolyLine" name="capolyline">
     <property name="geometry">
      <rect>
-      <x>1339</x>
+      <x>1340</x>
       <y>360</y>
       <width>81</width>
       <height>21</height>
@@ -404,7 +404,7 @@
    <widget class="caPolyLine" name="capolyline_2">
     <property name="geometry">
      <rect>
-      <x>1395</x>
+      <x>1366</x>
       <y>371</y>
       <width>31</width>
       <height>15</height>
@@ -433,9 +433,9 @@
    <widget class="caPolyLine" name="capolyline_5">
     <property name="geometry">
      <rect>
-      <x>1396</x>
-      <y>375</y>
-      <width>21</width>
+      <x>1367</x>
+      <y>371</y>
+      <width>51</width>
       <height>20</height>
      </rect>
     </property>
@@ -456,7 +456,7 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">0,0;30,0</string>
+     <string notr="true">0,0;72,0</string>
     </property>
     <property name="visibility">
      <enum>caPolyLine::Calc</enum>
@@ -1424,7 +1424,7 @@
     <property name="geometry">
      <rect>
       <x>1416</x>
-      <y>371</y>
+      <y>367</y>
       <width>5</width>
       <height>10</height>
      </rect>
@@ -1787,8 +1787,8 @@
    <widget class="caMessageButton" name="camessagebutton_3">
     <property name="geometry">
      <rect>
-      <x>1389</x>
-      <y>368</y>
+      <x>1359</x>
+      <y>366</y>
       <width>15</width>
       <height>15</height>
      </rect>
@@ -1829,8 +1829,8 @@
    <widget class="caLed" name="caled_3">
     <property name="geometry">
      <rect>
-      <x>1390</x>
-      <y>369</y>
+      <x>1360</x>
+      <y>366</y>
       <width>12</width>
       <height>12</height>
      </rect>
@@ -1873,10 +1873,10 @@
    <widget class="caPolyLine" name="capolyline_10">
     <property name="geometry">
      <rect>
-      <x>1395</x>
-      <y>349</y>
-      <width>31</width>
-      <height>20</height>
+      <x>1070</x>
+      <y>150</y>
+      <width>297</width>
+      <height>231</height>
      </rect>
     </property>
     <property name="font">
@@ -1885,8 +1885,11 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Dash</enum>
+    </property>
     <property name="lineSize">
-     <number>2</number>
+     <number>1</number>
     </property>
     <property name="lineColor">
      <color>
@@ -1896,16 +1899,19 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">0,0;0,126</string>
+     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,125;123,125;115,120;100,120;100,97;30,97;</string>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caPolyLine::Outline</enum>
     </property>
     <property name="visibility">
-     <enum>caPolyLine::Calc</enum>
+     <enum>caPolyLine::StaticV</enum>
     </property>
     <property name="visibilityCalc">
-     <string notr="true">A=2</string>
+     <string notr="true"/>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+     <string notr="true"/>
     </property>
    </widget>
    <widget class="caPolyLine" name="capolyline_13">
@@ -1952,8 +1958,8 @@
    <widget class="caLineEdit" name="calineedit_26">
     <property name="geometry">
      <rect>
-      <x>1304</x>
-      <y>240</y>
+      <x>1280</x>
+      <y>310</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -2013,8 +2019,8 @@
    <widget class="caRelatedDisplay" name="carelateddisplay_10">
     <property name="geometry">
      <rect>
-      <x>1280</x>
-      <y>240</y>
+      <x>1256</x>
+      <y>320</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -2049,8 +2055,8 @@
    <widget class="caLineEdit" name="calineedit_27">
     <property name="geometry">
      <rect>
-      <x>1304</x>
-      <y>260</y>
+      <x>1280</x>
+      <y>330</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -6721,6 +6727,462 @@
      <string notr="true">SHUTTER:PM:Flip_RBV</string>
     </property>
    </widget>
+   <widget class="caLineEdit" name="calineedit_36">
+    <property name="geometry">
+     <rect>
+      <x>1153</x>
+      <y>176</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>----</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">PM:MOKE:PUMP:RP</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::exponential</enum>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_25">
+    <property name="geometry">
+     <rect>
+      <x>1133</x>
+      <y>176</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Newport1936.ui</string>
+    </property>
+    <property name="args">
+     <string>P=PM,R=MOKE:PUMP,T=Pump Moke</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_12">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>150</y>
+      <width>297</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Dash</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>170</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">165,60;0,60; 0,75; 40,75; 50,80;60,80;70,75;110,75;110,85;30,97;70,105;70,110;200,110</string>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caPolyLine::Outline</enum>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::StaticV</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true"/>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_17">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>150</y>
+      <width>297</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>170</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">165,60;0,60;0,75;40,75;50,80;60,80;70,75;110,75;110,85;30,97;70,105;70,110;200,110</string>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caPolyLine::Outline</enum>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A = 2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="compressor_2">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>240</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>40</red>
+      <green>40</green>
+      <blue>40</blue>
+     </color>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Filled</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>207</red>
+      <green>207</green>
+      <blue>207</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="compressor_3">
+    <property name="geometry">
+     <rect>
+      <x>1149</x>
+      <y>272</y>
+      <width>15</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>40</red>
+      <green>40</green>
+      <blue>40</blue>
+     </color>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Filled</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>207</red>
+      <green>207</green>
+      <blue>207</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caGraphics" name="compressor_4">
+    <property name="geometry">
+     <rect>
+      <x>1086</x>
+      <y>237</y>
+      <width>15</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>40</red>
+      <green>40</green>
+      <blue>40</blue>
+     </color>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Filled</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>207</red>
+      <green>207</green>
+      <blue>207</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_3">
+    <property name="geometry">
+     <rect>
+      <x>1372</x>
+      <y>371</y>
+      <width>44</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Dash</enum>
+    </property>
+    <property name="lineSize">
+     <number>2</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">0,0;54,0</string>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::StaticV</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true"/>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true"/>
+    </property>
+    <property name="channelB">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_18">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>150</y>
+      <width>297</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,125;123,125;115,120;100,120;100,97;85,97</string>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caPolyLine::Outline</enum>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_4">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>200</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Dash</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">56,48;56,75</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_19">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>200</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">56,48;56,75</string>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2 &amp;&amp; B = 1</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+    </property>
+    <property name="channelB">
+     <string notr="true">SHUTTER:MOKE:Flip_RBV</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_20">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>200</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">0,47;56,47</string>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2 &amp;&amp; B = 2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+    </property>
+    <property name="channelB">
+     <string notr="true">SHUTTER:MOKE:Flip_RBV</string>
+    </property>
+   </widget>
    <zorder>table1</zorder>
    <zorder>table2</zorder>
    <zorder>legend</zorder>
@@ -6728,13 +7190,10 @@
    <zorder>vitara</zorder>
    <zorder>calabel</zorder>
    <zorder>calabelvertical</zorder>
-   <zorder>compressor</zorder>
    <zorder>nopa</zorder>
    <zorder>calabelvertical_2</zorder>
-   <zorder>calabel_3</zorder>
    <zorder>spectralfilter</zorder>
    <zorder>capolyline_2</zorder>
-   <zorder>capolyline_5</zorder>
    <zorder>capolyline_6</zorder>
    <zorder>cover6</zorder>
    <zorder>cover2</zorder>
@@ -6753,23 +7212,16 @@
    <zorder>calabelvertical_3</zorder>
    <zorder>calineedit_14</zorder>
    <zorder>calabel_7</zorder>
-   <zorder>calabel_8</zorder>
-   <zorder>calineedit_15</zorder>
    <zorder>carelateddisplay_9</zorder>
    <zorder>calineedit_24</zorder>
    <zorder>calineedit_25</zorder>
    <zorder>hhgbeamstop</zorder>
-   <zorder>nopabeamstop</zorder>
    <zorder>capolyline_11</zorder>
    <zorder>capolyline_9</zorder>
    <zorder>capolyline</zorder>
    <zorder>hhgpowermeter</zorder>
-   <zorder>caled_3</zorder>
-   <zorder>camessagebutton_3</zorder>
-   <zorder>capolyline_10</zorder>
    <zorder>capolyline_13</zorder>
    <zorder>calineedit_26</zorder>
-   <zorder>carelateddisplay_10</zorder>
    <zorder>calineedit_27</zorder>
    <zorder>calineedit_28</zorder>
    <zorder>carelateddisplay_11</zorder>
@@ -6822,8 +7274,6 @@
    <zorder>Stabilization</zorder>
    <zorder>calineedit_47</zorder>
    <zorder>carelateddisplay_23</zorder>
-   <zorder>camessagebutton_4</zorder>
-   <zorder>caled_13</zorder>
    <zorder>calabel_17</zorder>
    <zorder>capolyline_14</zorder>
    <zorder>capolyline_8</zorder>
@@ -6834,6 +7284,30 @@
    <zorder>caled_2</zorder>
    <zorder>camessagebutton</zorder>
    <zorder>camessagebutton_2</zorder>
+   <zorder>calineedit_36</zorder>
+   <zorder>carelateddisplay_25</zorder>
+   <zorder>carelateddisplay_10</zorder>
+   <zorder>capolyline_5</zorder>
+   <zorder>caled_3</zorder>
+   <zorder>camessagebutton_3</zorder>
+   <zorder>capolyline_10</zorder>
+   <zorder>capolyline_12</zorder>
+   <zorder>capolyline_17</zorder>
+   <zorder>compressor_2</zorder>
+   <zorder>compressor_4</zorder>
+   <zorder>capolyline_3</zorder>
+   <zorder>capolyline_18</zorder>
+   <zorder>capolyline_4</zorder>
+   <zorder>capolyline_19</zorder>
+   <zorder>capolyline_20</zorder>
+   <zorder>nopabeamstop</zorder>
+   <zorder>compressor</zorder>
+   <zorder>calabel_3</zorder>
+   <zorder>calabel_8</zorder>
+   <zorder>calineedit_15</zorder>
+   <zorder>caled_13</zorder>
+   <zorder>camessagebutton_4</zorder>
+   <zorder>compressor_3</zorder>
   </widget>
  </widget>
  <customwidgets>
