@@ -7351,16 +7351,16 @@
    <zorder>capolyline_19</zorder>
    <zorder>capolyline_20</zorder>
    <zorder>nopabeamstop</zorder>
-   <zorder>compressor</zorder>
-   <zorder>calabel_3</zorder>
-   <zorder>calabel_8</zorder>
-   <zorder>calineedit_15</zorder>
    <zorder>caled_13</zorder>
    <zorder>camessagebutton_4</zorder>
    <zorder>compressor_3</zorder>
    <zorder>nopa_2</zorder>
    <zorder>capolyline_10</zorder>
    <zorder>capolyline_18</zorder>
+   <zorder>compressor</zorder>
+   <zorder>calabel_3</zorder>
+   <zorder>calabel_8</zorder>
+   <zorder>calineedit_15</zorder>
   </widget>
  </widget>
  <customwidgets>
