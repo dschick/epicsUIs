@@ -1899,13 +1899,7 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;
-165,60;
-165,70;
-140,70;
-140,80;
-165,80;
-165,125;123,125;115,120;100,120;100,97;30,97</string>
+     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,70;140,70;140,80;165,80;165,125;123,125;115,120;100,120;100,97;30,97</string>
     </property>
     <property name="fillstyle" stdset="0">
      <enum>caPolyLine::Outline</enum>
@@ -7081,23 +7075,7 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">297,216;
-297,13;
-270,13;
-270,30;
-285,30;
-285,60;
-165,60;
-165,70;
-140,70;
-140,80;
-165,80;
-165,125;
-123,125;
-115,120;
-100,120;
-100,97;
-85,97</string>
+     <string notr="true">297,216;297,13;270,13;270,30;285,30;285,60;165,60;165,70;140,70;140,80;165,80;165,125;123,125;115,120;100,120;100,97;85,97</string>
     </property>
     <property name="fillstyle" stdset="0">
      <enum>caPolyLine::Outline</enum>
@@ -7235,6 +7213,45 @@
      </color>
     </property>
    </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_26">
+    <property name="geometry">
+     <rect>
+      <x>1390</x>
+      <y>10</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="label">
+     <string notr="true">ioc-summary</string>
+    </property>
+    <property name="labels">
+     <string>ioc-summary</string>
+    </property>
+    <property name="files">
+     <string>ioc-summary.ui</string>
+    </property>
+    <property name="args">
+     <string/>
+    </property>
+   </widget>
    <zorder>table1</zorder>
    <zorder>table2</zorder>
    <zorder>legend</zorder>
@@ -7361,6 +7378,7 @@
    <zorder>calabel_3</zorder>
    <zorder>calabel_8</zorder>
    <zorder>calineedit_15</zorder>
+   <zorder>carelateddisplay_26</zorder>
   </widget>
  </widget>
  <customwidgets>

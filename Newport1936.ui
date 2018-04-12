@@ -315,6 +315,25 @@
     </color>
    </property>
   </widget>
+  <widget class="caMessageButton" name="camessagebutton_3">
+   <property name="geometry">
+    <rect>
+     <x>454</x>
+     <y>108</y>
+     <width>81</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restart IOC</string>
+   </property>
+   <property name="channel" stdset="0">
+    <string notr="true">RASPI05:Newport1936:RESTART</string>
+   </property>
+   <property name="pressMessage">
+    <string notr="true">1</string>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -336,6 +355,11 @@
    <class>caTextEntry</class>
    <extends>caLineEdit</extends>
    <header>caTextEntry</header>
+  </customwidget>
+  <customwidget>
+   <class>caMessageButton</class>
+   <extends>QPushButton</extends>
+   <header>caMessageButton</header>
   </customwidget>
   <customwidget>
    <class>caLabel</class>
