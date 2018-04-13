@@ -3805,7 +3805,7 @@
      <enum>caLabel::Calc</enum>
     </property>
     <property name="visibilityCalc">
-     <string notr="true">A &lt; 0.00000001</string>
+     <string notr="true">A &lt; 0.0001</string>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">PM:LEGEND:MEAS:POW</string>
@@ -7252,6 +7252,103 @@
      <string/>
     </property>
    </widget>
+   <widget class="caLineEdit" name="calineedit_37">
+    <property name="geometry">
+     <rect>
+      <x>1153</x>
+      <y>150</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>----</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">PM:MOKE:MEAS:POW</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::exponential</enum>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_27">
+    <property name="geometry">
+     <rect>
+      <x>1133</x>
+      <y>150</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Thorlabs PM16.ui</string>
+    </property>
+    <property name="args">
+     <string>P=PM:,R=MOKE:,T=MOKE THORLABS</string>
+    </property>
+   </widget>
    <zorder>table1</zorder>
    <zorder>table2</zorder>
    <zorder>legend</zorder>
@@ -7379,6 +7476,8 @@
    <zorder>calabel_8</zorder>
    <zorder>calineedit_15</zorder>
    <zorder>carelateddisplay_26</zorder>
+   <zorder>calineedit_37</zorder>
+   <zorder>carelateddisplay_27</zorder>
   </widget>
  </widget>
  <customwidgets>
