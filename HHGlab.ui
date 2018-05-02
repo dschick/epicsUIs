@@ -7349,8 +7349,190 @@
      <string>P=PM:,R=MOKE:,T=MOKE THORLABS</string>
     </property>
    </widget>
-   <zorder>table1</zorder>
+   <widget class="caLed" name="caled_15">
+    <property name="geometry">
+     <rect>
+      <x>813</x>
+      <y>202</y>
+      <width>12</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>12</width>
+      <height>12</height>
+     </size>
+    </property>
+    <property name="rectangular">
+     <bool>true</bool>
+    </property>
+    <property name="ledWidth">
+     <number>10</number>
+    </property>
+    <property name="ledHeight">
+     <number>10</number>
+    </property>
+    <property name="linearGradient">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:HHGPUMP:Flip_RBV</string>
+    </property>
+    <property name="falseColor">
+     <color>
+      <red>0</red>
+      <green>170</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="trueValue">
+     <string>2</string>
+    </property>
+    <property name="falseValue">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="caMessageButton" name="camessagebutton_5">
+    <property name="geometry">
+     <rect>
+      <x>812</x>
+      <y>200</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:HHGPUMP:Flip</string>
+    </property>
+    <property name="label">
+     <string notr="true"/>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>232</red>
+      <green>232</green>
+      <blue>232</blue>
+     </color>
+    </property>
+    <property name="pressMessage">
+     <string notr="true">3</string>
+    </property>
+    <property name="colorMode">
+     <enum>caMessageButton::Static</enum>
+    </property>
+    <property name="elevation">
+     <enum>caMessageButton::on_top</enum>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_21">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>200</y>
+      <width>781</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Dash</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">670,75;650,75;650,45;750,45;750,25;665,25;660,20;650,8;75,8;75,41</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_22">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>200</y>
+      <width>781</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">650,8;75,8;75,41</string>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2 &amp;&amp; B=2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:HHGPUMP:Flip_RBV</string>
+    </property>
+    <property name="channelB">
+     <string notr="true">SHUTTER:PM:Flip_RBV</string>
+    </property>
+   </widget>
+   <widget class="caPolyLine" name="capolyline_23">
+    <property name="geometry">
+     <rect>
+      <x>169</x>
+      <y>200</y>
+      <width>781</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="linestyle" stdset="0">
+     <enum>caPolyLine::Solid</enum>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>170</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xyPairs" stdset="0">
+     <string notr="true">670,75;650,75;650,45;750,45;750,25;665,25;660,20;650,8;</string>
+    </property>
+    <property name="visibility">
+     <enum>caPolyLine::Calc</enum>
+    </property>
+    <property name="visibilityCalc">
+     <string notr="true">A=2</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">SHUTTER:PM:Flip_RBV</string>
+    </property>
+    <property name="channelB">
+     <string notr="true"/>
+    </property>
+   </widget>
    <zorder>table2</zorder>
+   <zorder>capolyline_21</zorder>
+   <zorder>capolyline_22</zorder>
+   <zorder>capolyline_23</zorder>
+   <zorder>table1</zorder>
    <zorder>legend</zorder>
    <zorder>calabel_2</zorder>
    <zorder>vitara</zorder>
@@ -7465,8 +7647,6 @@
    <zorder>capolyline_19</zorder>
    <zorder>capolyline_20</zorder>
    <zorder>nopabeamstop</zorder>
-   <zorder>caled_13</zorder>
-   <zorder>camessagebutton_4</zorder>
    <zorder>compressor_3</zorder>
    <zorder>nopa_2</zorder>
    <zorder>capolyline_10</zorder>
@@ -7478,6 +7658,10 @@
    <zorder>carelateddisplay_26</zorder>
    <zorder>calineedit_37</zorder>
    <zorder>carelateddisplay_27</zorder>
+   <zorder>caled_13</zorder>
+   <zorder>camessagebutton_4</zorder>
+   <zorder>caled_15</zorder>
+   <zorder>camessagebutton_5</zorder>
   </widget>
  </widget>
  <customwidgets>
