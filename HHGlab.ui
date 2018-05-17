@@ -4048,7 +4048,7 @@
        <x>15</x>
        <y>34</y>
        <width>211</width>
-       <height>121</height>
+       <height>122</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0">
@@ -4058,7 +4058,7 @@
       <property name="verticalSpacing">
        <number>5</number>
       </property>
-      <item row="2" column="0">
+      <item row="3" column="0">
        <widget class="caRelatedDisplay" name="carelateddisplay_3">
         <property name="sizePolicy">
          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -4083,7 +4083,7 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="3" column="1">
        <widget class="caLineEdit" name="calineedit_63">
         <property name="minimumSize">
          <size>
@@ -4125,7 +4125,7 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="4" column="0">
        <widget class="caRelatedDisplay" name="carelateddisplay_7">
         <property name="sizePolicy">
          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -4150,7 +4150,7 @@
         </property>
        </widget>
       </item>
-      <item row="3" column="1">
+      <item row="4" column="1">
        <widget class="caLineEdit" name="calineedit_64">
         <property name="minimumSize">
          <size>
@@ -4306,6 +4306,76 @@
         </property>
         <property name="channel" stdset="0">
          <string notr="true">SHUTTER:HHG:Shutter_RBV</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color alpha="0">
+          <red>160</red>
+          <green>160</green>
+          <blue>164</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Static</enum>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="precision">
+         <number>6</number>
+        </property>
+        <property name="unitsEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="caRelatedDisplay" name="carelateddisplay_28">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="labels">
+         <string>HHG Pump</string>
+        </property>
+        <property name="files">
+         <string>TLMFF.ui</string>
+        </property>
+        <property name="args">
+         <string>P=SHUTTER:,R=HHGPUMP:,T=HHGPUMP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="caLineEdit" name="calineedit_65">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>---------</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string notr="true">SHUTTER:HHGPUMP:Shutter_RBV</string>
         </property>
         <property name="foreground">
          <color>
@@ -7513,7 +7583,7 @@
      </color>
     </property>
     <property name="xyPairs" stdset="0">
-     <string notr="true">670,75;650,75;650,45;750,45;750,25;665,25;660,20;650,8;</string>
+     <string notr="true">670,75;650,75;650,45;750,45;750,25;665,25;660,20;650,8</string>
     </property>
     <property name="visibility">
      <enum>caPolyLine::Calc</enum>
