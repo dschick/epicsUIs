@@ -1,0 +1,2562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1680</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>HHG Lab Info Screen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	font-family: &quot;Ubuntu&quot;;
+}
+
+QMainWindow {
+	background-color: rgb(80, 80, 80);
+}
+
+QGroupBox {
+	color: #DDDDDD;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+QLabel {
+	color: #DDDDDD;
+	font-size: 35px;
+	font-family: &quot;Ubuntu Condensed&quot;;
+}
+
+caStripPlot {
+	background-color: rgb(80, 80, 80);
+}
+
+caStripPlot  * {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+
+caLineEdit {
+	size: 35px;
+}
+
+caclock * {
+	size: 25px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="LeftColumn">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_28">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>400</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;mbi_blau-ohne-transp.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="caClock" name="caclock">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>400</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="LaserStatus">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>Laser Status</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="caLabel" name="calabel_31">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>ON</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>40</red>
+             <green>40</green>
+             <blue>40</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caLabel::Calc</enum>
+           </property>
+           <property name="visibilityCalc">
+            <string notr="true">A &gt; 0.0001</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PM:LEGEND:MEAS:POW</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Revolution:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>Temperature:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="caLineEdit" name="calineedit_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>78</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>--.- %</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">ENV:LEGEND:humid</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="caLineEdit" name="calineedit_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>87</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>--.- C</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">ENV:LEGEND:temp</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Humidity:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Legend:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="caLabel" name="calabel_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>ON</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>40</red>
+             <green>40</green>
+             <blue>40</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caLabel::Calc</enum>
+           </property>
+           <property name="visibilityCalc">
+            <string notr="true">A &gt; 0.0001</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PM:LEGEND:MEAS:POW</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="LaserWavelength">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>Laser Wavelength</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>400 nm:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>800 nm:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>NOPA IR:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="caLed" name="caled_17">
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>40</number>
+           </property>
+           <property name="ledHeight">
+            <number>40</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="scaleContents">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">HHG:GASCELL:pidEnabled</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>On</string>
+           </property>
+           <property name="falseValue">
+            <string>Off</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="caLed" name="caled_14">
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>40</number>
+           </property>
+           <property name="ledHeight">
+            <number>40</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="scaleContents">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">HHG:GASCELL:pidEnabled</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>On</string>
+           </property>
+           <property name="falseValue">
+            <string>Off</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="caLed" name="caled_16">
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>40</number>
+           </property>
+           <property name="ledHeight">
+            <number>40</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="scaleContents">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">HHG:GASCELL:pidEnabled</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>On</string>
+           </property>
+           <property name="falseValue">
+            <string>Off</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+        <zorder>label_8</zorder>
+        <zorder>label_11</zorder>
+        <zorder>label_12</zorder>
+        <zorder>caled_17</zorder>
+        <zorder>caled_14</zorder>
+        <zorder>caled_16</zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="ShutterStatus">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>Shutter Status</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="8">
+          <widget class="caLed" name="caled_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>30</number>
+           </property>
+           <property name="ledHeight">
+            <number>30</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:NOPA:Flip_RBV</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>2</string>
+           </property>
+           <property name="falseValue">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="caLed" name="caled_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>30</number>
+           </property>
+           <property name="ledHeight">
+            <number>30</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:PM:Flip_RBV</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>2</string>
+           </property>
+           <property name="falseValue">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="5">
+          <widget class="caLineEdit" name="calineedit_65">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>30</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>---------</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:HHGPUMP:Shutter_RBV</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>160</red>
+             <green>160</green>
+             <blue>164</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>6</number>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>HHG Cell:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5">
+          <widget class="caLineEdit" name="calineedit_66">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>30</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>---------</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:HHG:Shutter_RBV</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>160</red>
+             <green>160</green>
+             <blue>164</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>6</number>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLabel" name="label_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>HHG Pump:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Legend HHG:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="caLed" name="caled_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>30</number>
+           </property>
+           <property name="ledHeight">
+            <number>30</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:HHGPUMP:Flip_RBV</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>2</string>
+           </property>
+           <property name="falseValue">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="caLed" name="caled_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>30</number>
+           </property>
+           <property name="ledHeight">
+            <number>30</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:HHG:Flip_RBV</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>1</string>
+           </property>
+           <property name="falseValue">
+            <string>2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="caLineEdit" name="calineedit_63">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>30</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>---------</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:PM:Shutter_RBV</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>160</red>
+             <green>160</green>
+             <blue>164</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>6</number>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>Legend NOPA:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="8">
+          <widget class="caLed" name="caled_15">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="rectangular">
+            <bool>true</bool>
+           </property>
+           <property name="ledWidth">
+            <number>30</number>
+           </property>
+           <property name="ledHeight">
+            <number>30</number>
+           </property>
+           <property name="linearGradient">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:MOKE:Flip_RBV</string>
+           </property>
+           <property name="falseColor">
+            <color>
+             <red>0</red>
+             <green>170</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="trueValue">
+            <string>2</string>
+           </property>
+           <property name="falseValue">
+            <string>1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="caLineEdit" name="calineedit_64">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>30</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>---------</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:NOPA:Shutter_RBV</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>160</red>
+             <green>160</green>
+             <blue>164</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>6</number>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="9">
+          <widget class="caLineEdit" name="calineedit_62">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>30</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>---------</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">SHUTTER:MOKE:Shutter_RBV</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>160</red>
+             <green>160</green>
+             <blue>164</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+           </property>
+           <property name="precision">
+            <number>6</number>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet" stdset="0">
+            <string notr="true">caTextEntry,caLineEdit {background-color: rgba(160, 160, 164, 0); color: rgba(0, 255, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(80, 80, 82, 0) rgba(240, 240, 246, 0)  rgba(240, 240, 246, 0) rgba(80, 80, 82, 0);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="7">
+          <widget class="QLabel" name="label_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>MOKE Pump:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="10">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+        <zorder>label_3</zorder>
+        <zorder>label_7</zorder>
+        <zorder>label_5</zorder>
+        <zorder>calineedit_63</zorder>
+        <zorder>caled_19</zorder>
+        <zorder>caled_20</zorder>
+        <zorder>caled_22</zorder>
+        <zorder>calineedit_65</zorder>
+        <zorder>calineedit_66</zorder>
+        <zorder>label_4</zorder>
+        <zorder>caled_21</zorder>
+        <zorder>calineedit_64</zorder>
+        <zorder>label_6</zorder>
+        <zorder>caled_15</zorder>
+        <zorder>calineedit_62</zorder>
+        <zorder>horizontalSpacer</zorder>
+        <zorder>horizontalSpacer_2</zorder>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="PressureStatus">
+        <property name="title">
+         <string>Pressure Status</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Reference:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Mirror:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_27">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Grating:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>HHG:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_20">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sample:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_22">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Toroid:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="caLineEdit" name="calineedit_51">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>25</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:IMAG:SENS1:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_25">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Chamber:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="caLineEdit" name="calineedit_36">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>25</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:FRONTEND:HHG:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="caLineEdit" name="calineedit_45">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>25</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:FRONTEND:MIRROR:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="caLineEdit" name="calineedit_46">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>25</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:FRONTEND:REFERENCE:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="caLineEdit" name="calineedit_48">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>24</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:SPEC:TOROID:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="caLineEdit" name="calineedit_49">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>24</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:SPEC:SAMPLE:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="caLineEdit" name="calineedit_50">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>24</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:SPEC:GRATING:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Frontend</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Spec.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Imag.</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="rightColumn">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="LaserPower">
+        <property name="title">
+         <string>Laser Power</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QFormLayout" name="RevoPowers">
+           <property name="fieldGrowthPolicy">
+            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+           </property>
+           <item row="0" column="1">
+            <widget class="caLineEdit" name="calineedit_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu</family>
+               <pointsize>26</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>$(P)$(R)MEAS:POW</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="channel" stdset="0">
+              <string notr="true">PM:REVO:MEAS:POW</string>
+             </property>
+             <property name="background">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </property>
+             <property name="colorMode">
+              <enum>caLineEdit::Alarm_Static</enum>
+             </property>
+             <property name="precision">
+              <number>2</number>
+             </property>
+             <property name="precisionMode">
+              <enum>caLineEdit::User</enum>
+             </property>
+             <property name="fontScaleMode" stdset="0">
+              <enum>caLineEdit::WidthAndHeight</enum>
+             </property>
+             <property name="unitsEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="formatType">
+              <enum>caLineEdit::decimal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu Condensed</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Revolution:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="caStripPlot" name="RevoPowerTrend">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PM:REVO:MEAS:POW</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet" stdset="0">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="LegendPower">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu Condensed</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Legend:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="caLineEdit" name="calineedit_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu</family>
+               <pointsize>26</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>$(P)$(R)MEAS:POW</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="channel" stdset="0">
+              <string notr="true">PM:LEGEND:MEAS:POW</string>
+             </property>
+             <property name="background">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </property>
+             <property name="colorMode">
+              <enum>caLineEdit::Alarm_Static</enum>
+             </property>
+             <property name="precision">
+              <number>2</number>
+             </property>
+             <property name="precisionMode">
+              <enum>caLineEdit::User</enum>
+             </property>
+             <property name="fontScaleMode" stdset="0">
+              <enum>caLineEdit::WidthAndHeight</enum>
+             </property>
+             <property name="unitsEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="formatType">
+              <enum>caLineEdit::decimal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="caStripPlot" name="LegendPowerTrend">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PM:LEGEND:MEAS:POW</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="HHGStatus">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>HHG Status</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>PID Enabled:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="caLed" name="caled_18">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>110</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="rectangular">
+              <bool>true</bool>
+             </property>
+             <property name="ledWidth">
+              <number>30</number>
+             </property>
+             <property name="ledHeight">
+              <number>30</number>
+             </property>
+             <property name="linearGradient">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string notr="true">HHG:GASCELL:pidEnabled</string>
+             </property>
+             <property name="falseColor">
+              <color>
+               <red>255</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="trueColor">
+              <color>
+               <red>0</red>
+               <green>170</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="trueValue">
+              <string>On</string>
+             </property>
+             <property name="falseValue">
+              <string>Off</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Gas Pressure:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="caLineEdit" name="calineedit_38">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu</family>
+               <pointsize>26</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>-.--- mBar</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string notr="true">HHG:GASCELL:RP</string>
+             </property>
+             <property name="foreground">
+              <color>
+               <red>0</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="background">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </property>
+             <property name="colorMode">
+              <enum>caLineEdit::Alarm_Static</enum>
+             </property>
+             <property name="precision">
+              <number>1</number>
+             </property>
+             <property name="precisionMode">
+              <enum>caLineEdit::User</enum>
+             </property>
+             <property name="unitsEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="formatType">
+              <enum>caLineEdit::decimal</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="caStripPlot" name="LegendPowerTrend_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>HHG:GASCELL:RP</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_2">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>HHG Vacuum:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="caLineEdit" name="calineedit_37">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Ubuntu</family>
+               <pointsize>26</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>-.-e--- mBar</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string notr="true">PR:FRONTEND:HHG:RP</string>
+             </property>
+             <property name="foreground">
+              <color>
+               <red>0</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </property>
+             <property name="background">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </property>
+             <property name="colorMode">
+              <enum>caLineEdit::Alarm_Static</enum>
+             </property>
+             <property name="precision">
+              <number>1</number>
+             </property>
+             <property name="precisionMode">
+              <enum>caLineEdit::User</enum>
+             </property>
+             <property name="unitsEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="formatType">
+              <enum>caLineEdit::exponential</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="caStripPlot" name="LegendPowerTrend_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PR:FRONTEND:HHG:RP</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisType" stdset="0">
+            <enum>caStripPlot::log10</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtAnalogClock</class>
+   <extends>QwtDial</extends>
+   <header>qwt_analog_clock.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtDial</class>
+   <extends>QWidget</extends>
+   <header>qwt_dial.h</header>
+  </customwidget>
+  <customwidget>
+   <class>caLabel</class>
+   <extends>QLabel</extends>
+   <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caClock</class>
+   <extends>QwtAnalogClock</extends>
+   <header>caClock</header>
+  </customwidget>
+  <customwidget>
+   <class>caLed</class>
+   <extends>QWidget</extends>
+   <header>caLed</header>
+  </customwidget>
+  <customwidget>
+   <class>caLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../home/epicsadm/resourceCaQtDm.qrc"/>
+ </resources>
+ <connections/>
+</ui>
