@@ -7598,6 +7598,353 @@
      <string notr="true"/>
     </property>
    </widget>
+   <widget class="QGroupBox" name="LaserStatus">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>20</y>
+      <width>261</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#ffffff;
+line-color:#ffffff;
+
+</string>
+    </property>
+    <property name="title">
+     <string>Laser Status</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="1" column="2">
+      <widget class="caLed" name="caled_16">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>15</number>
+       </property>
+       <property name="ledHeight">
+        <number>15</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LASER:STATUS:400nm</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>On</string>
+       </property>
+       <property name="falseValue">
+        <string>Off</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="caToggleButton" name="catogglebutton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LASER:STATUS:400nm</string>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>231</red>
+         <green>231</green>
+         <blue>231</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caToggleButton::Static</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="caLed" name="caled_18">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>15</number>
+       </property>
+       <property name="ledHeight">
+        <number>15</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LASER:STATUS:800nm</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>On</string>
+       </property>
+       <property name="falseValue">
+        <string>Off</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;</string>
+       </property>
+       <property name="text">
+        <string>800 nm enabled?</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;</string>
+       </property>
+       <property name="text">
+        <string>400 nm enabled?</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#ffffff;</string>
+       </property>
+       <property name="text">
+        <string>NOPA IR enabled?</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="caLed" name="caled_17">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="rectangular">
+        <bool>true</bool>
+       </property>
+       <property name="ledWidth">
+        <number>15</number>
+       </property>
+       <property name="ledHeight">
+        <number>15</number>
+       </property>
+       <property name="linearGradient">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LASER:STATUS:NOPA</string>
+       </property>
+       <property name="falseColor">
+        <color>
+         <red>0</red>
+         <green>170</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueColor">
+        <color>
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </property>
+       <property name="trueValue">
+        <string>On</string>
+       </property>
+       <property name="falseValue">
+        <string>Off</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="caToggleButton" name="catogglebutton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LASER:STATUS:NOPA</string>
+       </property>
+       <property name="foreground">
+        <color>
+         <red>231</red>
+         <green>231</green>
+         <blue>231</blue>
+        </color>
+       </property>
+       <property name="colorMode">
+        <enum>caToggleButton::Static</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="caGraphics" name="sdg_4">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>291</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>40</red>
+      <green>40</green>
+      <blue>40</blue>
+     </color>
+    </property>
+    <property name="fillstyle" stdset="0">
+     <enum>caGraphics::Filled</enum>
+    </property>
+    <property name="lineSize">
+     <number>1</number>
+    </property>
+    <property name="lineColor">
+     <color>
+      <red>207</red>
+      <green>207</green>
+      <blue>207</blue>
+     </color>
+    </property>
+   </widget>
+   <zorder>sdg_4</zorder>
    <zorder>table2</zorder>
    <zorder>capolyline_21</zorder>
    <zorder>capolyline_22</zorder>
@@ -7732,6 +8079,7 @@
    <zorder>camessagebutton_4</zorder>
    <zorder>caled_15</zorder>
    <zorder>camessagebutton_5</zorder>
+   <zorder>LaserStatus</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -7744,6 +8092,11 @@
    <class>caMessageButton</class>
    <extends>QPushButton</extends>
    <header>caMessageButton</header>
+  </customwidget>
+  <customwidget>
+   <class>caToggleButton</class>
+   <extends>QCheckBox</extends>
+   <header>caToggleButton</header>
   </customwidget>
   <customwidget>
    <class>caLabel</class>

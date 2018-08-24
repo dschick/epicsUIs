@@ -548,7 +548,7 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">HHG:GASCELL:pidEnabled</string>
+            <string notr="true">LASER:STATUS:800nm</string>
            </property>
            <property name="falseColor">
             <color>
@@ -590,7 +590,7 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">HHG:GASCELL:pidEnabled</string>
+            <string notr="true">LASER:STATUS:400nm</string>
            </property>
            <property name="falseColor">
             <color>
@@ -632,7 +632,7 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">HHG:GASCELL:pidEnabled</string>
+            <string notr="true">LASER:STATUS:NOPA</string>
            </property>
            <property name="falseColor">
             <color>
