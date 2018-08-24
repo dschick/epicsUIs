@@ -75,37 +75,7 @@ caclock * {
        <number>10</number>
       </property>
       <item>
-       <layout class="QGridLayout" name="gridLayout_5">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_28">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>400</width>
-            <height>400</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;mbi_blau-ohne-transp.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="caClock" name="caclock">
-          <property name="maximumSize">
-           <size>
-            <width>400</width>
-            <height>400</height>
-           </size>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <layout class="QGridLayout" name="gridLayout_5"/>
       </item>
       <item>
        <widget class="QGroupBox" name="LaserStatus">
@@ -482,6 +452,22 @@ caclock * {
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_12">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>NOPA IR:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
          <item row="0" column="2">
           <widget class="QLabel" name="label_11">
            <property name="sizePolicy">
@@ -508,22 +494,6 @@ caclock * {
            </property>
            <property name="text">
             <string>800 nm:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="QLabel" name="label_12">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string>NOPA IR:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -2570,16 +2540,6 @@ caclock * {
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1920</width>
-     <height>23</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -2591,6 +2551,16 @@ caclock * {
     <bool>false</bool>
    </attribute>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
@@ -2599,24 +2569,9 @@ caclock * {
    <header>qwt_plot.h</header>
   </customwidget>
   <customwidget>
-   <class>QwtAnalogClock</class>
-   <extends>QwtDial</extends>
-   <header>qwt_analog_clock.h</header>
-  </customwidget>
-  <customwidget>
-   <class>QwtDial</class>
-   <extends>QWidget</extends>
-   <header>qwt_dial.h</header>
-  </customwidget>
-  <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
-  </customwidget>
-  <customwidget>
-   <class>caClock</class>
-   <extends>QwtAnalogClock</extends>
-   <header>caClock</header>
   </customwidget>
   <customwidget>
    <class>caLed</class>
