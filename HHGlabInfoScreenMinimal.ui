@@ -2176,6 +2176,48 @@ caclock * {
            </item>
           </layout>
          </item>
+         <item>
+          <widget class="caStripPlot" name="LegendPowerTrend">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PM:LEGEND:MEAS:POW</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
       </item>
