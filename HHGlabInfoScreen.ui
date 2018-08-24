@@ -75,7 +75,37 @@ caclock * {
        <number>10</number>
       </property>
       <item>
-       <layout class="QGridLayout" name="gridLayout_5"/>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="1">
+         <widget class="caClock" name="caclock">
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>400</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_28">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>400</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;./mbi_blau-ohne-transp.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QGroupBox" name="LaserStatus">
@@ -2569,9 +2599,24 @@ caclock * {
    <header>qwt_plot.h</header>
   </customwidget>
   <customwidget>
+   <class>QwtAnalogClock</class>
+   <extends>QwtDial</extends>
+   <header>qwt_analog_clock.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtDial</class>
+   <extends>QWidget</extends>
+   <header>qwt_dial.h</header>
+  </customwidget>
+  <customwidget>
    <class>caLabel</class>
    <extends>QLabel</extends>
    <header>caLabel</header>
+  </customwidget>
+  <customwidget>
+   <class>caClock</class>
+   <extends>QwtAnalogClock</extends>
+   <header>caClock</header>
   </customwidget>
   <customwidget>
    <class>caLed</class>
