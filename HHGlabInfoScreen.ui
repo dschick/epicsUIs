@@ -51,16 +51,19 @@ caStripPlot  * {
 
 
 caLineEdit {
-	size: 35px;
+	font-size: 35px;
 }
 
 caclock * {
-	size: 25px;
+	font-size: 25px;
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: #333333;</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -159,10 +162,10 @@ caclock * {
             <enum>caLabel::Calc</enum>
            </property>
            <property name="visibilityCalc">
-            <string notr="true">A &gt; 0.0001</string>
+            <string notr="true">A &gt; 0.001</string>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">PM:LEGEND:MEAS:POW</string>
+            <string notr="true">PM:REVO:MEAS:POW</string>
            </property>
           </widget>
          </item>
@@ -212,7 +215,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>78</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -272,7 +275,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>87</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -385,7 +388,71 @@ caclock * {
             <enum>caLabel::Calc</enum>
            </property>
            <property name="visibilityCalc">
-            <string notr="true">A &gt; 0.0001</string>
+            <string notr="true">A &gt; 0.001</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PM:LEGEND:MEAS:POW</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="caLabel" name="calabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caLabel::Calc</enum>
+           </property>
+           <property name="visibilityCalc">
+            <string notr="true">A &lt;= 0.001</string>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PM:REVO:MEAS:POW</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="caLabel" name="calabel_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>OFF</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="visibility">
+            <enum>caLabel::Calc</enum>
+           </property>
+           <property name="visibilityCalc">
+            <string notr="true">A &lt; 0.001</string>
            </property>
            <property name="channel" stdset="0">
             <string notr="true">PM:LEGEND:MEAS:POW</string>
@@ -409,7 +476,7 @@ caclock * {
          <string notr="true"/>
         </property>
         <property name="title">
-         <string>Laser Wavelength</string>
+         <string>Laser Wavelengths on Table</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -723,7 +790,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>30</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="text">
@@ -802,7 +869,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>30</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="text">
@@ -994,7 +1061,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>30</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="text">
@@ -1117,7 +1184,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>30</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="text">
@@ -1171,7 +1238,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>30</pointsize>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="text">
@@ -1384,85 +1451,6 @@ caclock * {
            </property>
           </widget>
          </item>
-         <item row="1" column="5">
-          <widget class="caLineEdit" name="calineedit_51">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Ubuntu</family>
-             <pointsize>25</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
-            </font>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="text">
-            <string>-.-e--- mBar</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string notr="true">PR:IMAG:SENS1:RP</string>
-           </property>
-           <property name="foreground">
-            <color>
-             <red>0</red>
-             <green>255</green>
-             <blue>0</blue>
-            </color>
-           </property>
-           <property name="background">
-            <color alpha="0">
-             <red>120</red>
-             <green>120</green>
-             <blue>120</blue>
-            </color>
-           </property>
-           <property name="colorMode">
-            <enum>caLineEdit::Alarm_Static</enum>
-           </property>
-           <property name="precision">
-            <number>1</number>
-           </property>
-           <property name="precisionMode">
-            <enum>caLineEdit::User</enum>
-           </property>
-           <property name="unitsEnabled">
-            <bool>true</bool>
-           </property>
-           <property name="formatType">
-            <enum>caLineEdit::exponential</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="QLabel" name="label_25">
-           <property name="font">
-            <font>
-             <family>Ubuntu Condensed</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Chamber:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="1">
           <widget class="caLineEdit" name="calineedit_36">
            <property name="sizePolicy">
@@ -1474,10 +1462,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>25</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1519,7 +1504,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1537,10 +1522,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>25</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1582,7 +1564,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1600,10 +1582,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>25</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1645,7 +1624,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1663,10 +1642,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>24</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1708,7 +1684,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1726,10 +1702,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>24</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1771,7 +1744,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1789,10 +1762,7 @@ caclock * {
            <property name="font">
             <font>
              <family>Ubuntu</family>
-             <pointsize>24</pointsize>
-             <weight>50</weight>
-             <italic>false</italic>
-             <bold>false</bold>
+             <pointsize>-1</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -1834,7 +1804,7 @@ caclock * {
             <enum>caLineEdit::User</enum>
            </property>
            <property name="unitsEnabled">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
@@ -1876,6 +1846,82 @@ caclock * {
            </property>
            <property name="text">
             <string>Spec.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_25">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Chamber:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="caLineEdit" name="calineedit_51">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:IMAG:SENS1:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
            </property>
           </widget>
          </item>
@@ -1933,7 +1979,7 @@ caclock * {
              <property name="font">
               <font>
                <family>Ubuntu</family>
-               <pointsize>26</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="text">
@@ -2082,7 +2128,7 @@ caclock * {
              <property name="font">
               <font>
                <family>Ubuntu</family>
-               <pointsize>26</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="text">
@@ -2281,10 +2327,7 @@ caclock * {
              <property name="font">
               <font>
                <family>Ubuntu</family>
-               <pointsize>26</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="autoFillBackground">
@@ -2406,10 +2449,7 @@ caclock * {
              <property name="font">
               <font>
                <family>Ubuntu</family>
-               <pointsize>26</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
+               <pointsize>-1</pointsize>
               </font>
              </property>
              <property name="autoFillBackground">
@@ -2495,10 +2535,28 @@ caclock * {
             <enum>caStripPlot::log10</enum>
            </property>
            <property name="YAxisScaling" stdset="0">
-            <enum>caStripPlot::autoScale</enum>
+            <enum>caStripPlot::fixedScale</enum>
+           </property>
+           <property name="YaxisLimitsMax_1">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="YaxisLimitsMin_1">
+            <double>-8.000000000000000</double>
+           </property>
+           <property name="YaxisScalingMax_1" stdset="0">
+            <enum>caStripPlot::User</enum>
+           </property>
+           <property name="YaxisScalingMin_1" stdset="0">
+            <enum>caStripPlot::User</enum>
            </property>
            <property name="Style_1">
             <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="YaxisLimitsMax_2">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="YaxisLimitsMin_2">
+            <double>0.000001000000000</double>
            </property>
            <property name="LegendEnabled">
             <bool>false</bool>
@@ -2511,6 +2569,27 @@ caclock * {
      </layout>
     </item>
    </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
   </widget>
  </widget>
  <customwidgets>
