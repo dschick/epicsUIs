@@ -2071,7 +2071,7 @@ caclock * {
             <double>3600.000000000000000</double>
            </property>
            <property name="refreshRate" stdset="0">
-            <enum>caStripPlot::High</enum>
+            <enum>caStripPlot::Medium</enum>
            </property>
            <property name="XaxisType">
             <enum>caStripPlot::TimeScale</enum>
@@ -2198,7 +2198,7 @@ caclock * {
             <double>3600.000000000000000</double>
            </property>
            <property name="refreshRate" stdset="0">
-            <enum>caStripPlot::High</enum>
+            <enum>caStripPlot::Medium</enum>
            </property>
            <property name="XaxisType">
             <enum>caStripPlot::TimeScale</enum>
@@ -2407,7 +2407,7 @@ caclock * {
             <double>3600.000000000000000</double>
            </property>
            <property name="refreshRate" stdset="0">
-            <enum>caStripPlot::High</enum>
+            <enum>caStripPlot::Medium</enum>
            </property>
            <property name="XaxisType">
             <enum>caStripPlot::TimeScale</enum>
@@ -2529,28 +2529,28 @@ caclock * {
             <double>3600.000000000000000</double>
            </property>
            <property name="refreshRate" stdset="0">
-            <enum>caStripPlot::High</enum>
+            <enum>caStripPlot::Medium</enum>
            </property>
            <property name="XaxisType">
             <enum>caStripPlot::TimeScale</enum>
            </property>
            <property name="YAxisType" stdset="0">
-            <enum>caStripPlot::log10</enum>
+            <enum>caStripPlot::linear</enum>
            </property>
            <property name="YAxisScaling" stdset="0">
-            <enum>caStripPlot::fixedScale</enum>
+            <enum>caStripPlot::autoScale</enum>
            </property>
            <property name="YaxisLimitsMax_1">
             <double>1000.000000000000000</double>
            </property>
            <property name="YaxisLimitsMin_1">
-            <double>0.000001000000000</double>
+            <double>0.000000000000000</double>
            </property>
            <property name="YaxisScalingMax_1" stdset="0">
-            <enum>caStripPlot::User</enum>
+            <enum>caStripPlot::Channel</enum>
            </property>
            <property name="YaxisScalingMin_1" stdset="0">
-            <enum>caStripPlot::User</enum>
+            <enum>caStripPlot::Channel</enum>
            </property>
            <property name="Style_1">
             <enum>caStripPlot::Lines</enum>
