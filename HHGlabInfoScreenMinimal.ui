@@ -2544,7 +2544,7 @@ caclock * {
             <double>1000.000000000000000</double>
            </property>
            <property name="YaxisLimitsMin_1">
-            <double>-8.000000000000000</double>
+            <double>0.000001000000000</double>
            </property>
            <property name="YaxisScalingMax_1" stdset="0">
             <enum>caStripPlot::User</enum>
