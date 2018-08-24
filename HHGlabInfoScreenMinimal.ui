@@ -2046,8 +2046,53 @@ caclock * {
           </layout>
          </item>
          <item>
+          <widget class="caStripPlot" name="RevoPowerTrend">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PM:REVO:MEAS:POW</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::autoScale</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet" stdset="0">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+         <item>
           <layout class="QFormLayout" name="LegendPower">
-           <item row="0" column="0">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2072,7 +2117,7 @@ caclock * {
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
+           <item row="1" column="1">
             <widget class="caLineEdit" name="calineedit_12">
              <property name="sizePolicy">
               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2119,6 +2164,13 @@ caclock * {
              </property>
              <property name="formatType">
               <enum>caLineEdit::decimal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>GroupBox</string>
              </property>
             </widget>
            </item>
@@ -2381,6 +2433,11 @@ caclock * {
  </widget>
  <customwidgets>
   <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
+  <customwidget>
    <class>QwtAnalogClock</class>
    <extends>QwtDial</extends>
    <header>qwt_analog_clock.h</header>
@@ -2409,6 +2466,11 @@ caclock * {
    <class>caLineEdit</class>
    <extends>QLineEdit</extends>
    <header>caLineEdit</header>
+  </customwidget>
+  <customwidget>
+   <class>caStripPlot</class>
+   <extends>QwtPlot</extends>
+   <header>caStripPlot</header>
   </customwidget>
  </customwidgets>
  <resources>
