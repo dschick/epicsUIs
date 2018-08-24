@@ -2092,7 +2092,10 @@ caclock * {
          </item>
          <item>
           <layout class="QFormLayout" name="LegendPower">
-           <item row="1" column="0">
+           <property name="fieldGrowthPolicy">
+            <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+           </property>
+           <item row="0" column="0">
             <widget class="QLabel" name="label_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2117,7 +2120,7 @@ caclock * {
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
+           <item row="0" column="1">
             <widget class="caLineEdit" name="calineedit_12">
              <property name="sizePolicy">
               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
@@ -2164,13 +2167,6 @@ caclock * {
              </property>
              <property name="formatType">
               <enum>caLineEdit::decimal</enum>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QGroupBox" name="groupBox">
-             <property name="title">
-              <string>GroupBox</string>
              </property>
             </widget>
            </item>
@@ -2506,6 +2502,69 @@ caclock * {
             </widget>
            </item>
           </layout>
+         </item>
+         <item>
+          <widget class="caStripPlot" name="LegendPowerTrend_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+            </font>
+           </property>
+           <property name="TitleY">
+            <string notr="true"/>
+           </property>
+           <property name="channels" stdset="0">
+            <string>PR:FRONTEND:HHG:RP</string>
+           </property>
+           <property name="units">
+            <enum>caStripPlot::Second</enum>
+           </property>
+           <property name="period">
+            <double>3600.000000000000000</double>
+           </property>
+           <property name="refreshRate" stdset="0">
+            <enum>caStripPlot::High</enum>
+           </property>
+           <property name="XaxisType">
+            <enum>caStripPlot::TimeScale</enum>
+           </property>
+           <property name="YAxisType" stdset="0">
+            <enum>caStripPlot::log10</enum>
+           </property>
+           <property name="YAxisScaling" stdset="0">
+            <enum>caStripPlot::fixedScale</enum>
+           </property>
+           <property name="YaxisLimitsMax_1">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="YaxisLimitsMin_1">
+            <double>-8.000000000000000</double>
+           </property>
+           <property name="YaxisScalingMax_1" stdset="0">
+            <enum>caStripPlot::User</enum>
+           </property>
+           <property name="YaxisScalingMin_1" stdset="0">
+            <enum>caStripPlot::User</enum>
+           </property>
+           <property name="Style_1">
+            <enum>caStripPlot::Lines</enum>
+           </property>
+           <property name="YaxisLimitsMax_2">
+            <double>1000.000000000000000</double>
+           </property>
+           <property name="YaxisLimitsMin_2">
+            <double>0.000001000000000</double>
+           </property>
+           <property name="LegendEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
