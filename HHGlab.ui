@@ -7677,7 +7677,7 @@ line-color:#ffffff;
        </property>
        <property name="font">
         <font>
-         <pointsize>15</pointsize>
+         <pointsize>14</pointsize>
          <weight>75</weight>
          <italic>false</italic>
          <bold>true</bold>
@@ -7752,7 +7752,7 @@ line-color:#ffffff;
      <item row="0" column="0">
       <widget class="QLabel" name="label_4">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -7778,7 +7778,7 @@ line-color:#ffffff;
      <item row="1" column="0">
       <widget class="QLabel" name="label">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -7804,7 +7804,7 @@ line-color:#ffffff;
      <item row="2" column="0">
       <widget class="QLabel" name="label_2">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
