@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="newPrefix">
-    <file>mbi_blau-ohne-transp.gif</file>
+  <qresource>
+    <file>icons/mbi_blau-ohne-transp.gif</file>
   </qresource>
 </RCC>
