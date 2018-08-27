@@ -166,7 +166,7 @@ p, li { white-space: pre-wrap; }
             <enum>caLabel::Calc</enum>
            </property>
            <property name="visibilityCalc">
-            <string notr="true">A &gt; 0.001</string>
+            <string notr="true">A &gt; 0.01</string>
            </property>
            <property name="channel" stdset="0">
             <string notr="true">PM:REVO:MEAS:POW</string>
@@ -392,7 +392,7 @@ p, li { white-space: pre-wrap; }
             <enum>caLabel::Calc</enum>
            </property>
            <property name="visibilityCalc">
-            <string notr="true">A &gt; 0.001</string>
+            <string notr="true">A &gt; 0.01</string>
            </property>
            <property name="channel" stdset="0">
             <string notr="true">PM:LEGEND:MEAS:POW</string>

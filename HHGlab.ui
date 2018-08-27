@@ -3805,7 +3805,7 @@
      <enum>caLabel::Calc</enum>
     </property>
     <property name="visibilityCalc">
-     <string notr="true">A &lt; 0.0001</string>
+     <string notr="true">A &lt; 0.01</string>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">PM:LEGEND:MEAS:POW</string>
