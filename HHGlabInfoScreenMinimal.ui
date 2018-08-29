@@ -95,7 +95,7 @@ caclock * {
            </sizepolicy>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;./mbi_blau-ohne-transp.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;icons/mbi_blau-ohne-transp.gif&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
@@ -103,13 +103,6 @@ caclock * {
          </widget>
         </item>
        </layout>
-      </item>
-      <item>
-       <widget class="QGroupBox" name="groupBox">
-        <property name="title">
-         <string>GroupBox</string>
-        </property>
-       </widget>
       </item>
       <item>
        <widget class="QGroupBox" name="LaserStatus">
