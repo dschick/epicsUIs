@@ -1022,7 +1022,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="text">
@@ -3149,7 +3149,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3223,7 +3223,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3260,7 +3260,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3297,7 +3297,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3334,7 +3334,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3371,7 +3371,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3408,7 +3408,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3445,7 +3445,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3482,7 +3482,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3722,7 +3722,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -3775,7 +3775,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -4467,7 +4467,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>17</pointsize>
+       <pointsize>16</pointsize>
        <weight>50</weight>
        <italic>false</italic>
        <bold>false</bold>
@@ -4493,7 +4493,7 @@
        <x>4</x>
        <y>30</y>
        <width>271</width>
-       <height>82</height>
+       <height>88</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout">
@@ -5652,7 +5652,7 @@
      </property>
      <property name="font">
       <font>
-       <pointsize>17</pointsize>
+       <pointsize>16</pointsize>
        <weight>50</weight>
        <italic>false</italic>
        <bold>false</bold>
@@ -5687,7 +5687,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -5802,7 +5802,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -5857,7 +5857,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -5912,7 +5912,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -5967,7 +5967,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -6022,7 +6022,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -6077,7 +6077,7 @@
         <property name="font">
          <font>
           <family>Monospace</family>
-          <pointsize>9</pointsize>
+          <pointsize>10</pointsize>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
         </property>
@@ -6633,7 +6633,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>17</pointsize>
+      <pointsize>16</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -7944,6 +7944,274 @@ line-color:#ffffff;
      </color>
     </property>
    </widget>
+   <widget class="caLineEdit" name="calineedit_38">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>50</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>----</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">PM:FIELDMAX1:power</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::exponential</enum>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_29">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>50</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Fieldmax.ui</string>
+    </property>
+    <property name="args">
+     <string>P=PM,R=FIELDMAX1,T=FieldMax 1</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_52">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>80</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>12</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>----</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">PM:FIELDMAX2:power</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>2</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::exponential</enum>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_30">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>80</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Fieldmax.ui</string>
+    </property>
+    <property name="args">
+     <string>P=PM,R=FIELDMAX2,T=FieldMax 2</string>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_32">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>43</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FieldMax 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caLabel" name="calabel_34">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>73</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>FieldMax 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </widget>
    <zorder>sdg_4</zorder>
    <zorder>table2</zorder>
    <zorder>capolyline_21</zorder>
@@ -8080,6 +8348,12 @@ line-color:#ffffff;
    <zorder>caled_15</zorder>
    <zorder>camessagebutton_5</zorder>
    <zorder>LaserStatus</zorder>
+   <zorder>calineedit_38</zorder>
+   <zorder>carelateddisplay_29</zorder>
+   <zorder>calineedit_52</zorder>
+   <zorder>carelateddisplay_30</zorder>
+   <zorder>calabel_32</zorder>
+   <zorder>calabel_34</zorder>
   </widget>
  </widget>
  <customwidgets>

@@ -33,6 +33,86 @@ QTabWidget {
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <item row="24" column="2">
+     <widget class="caRelatedDisplay" name="carelateddisplay_12">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="labels">
+       <string/>
+      </property>
+      <property name="files">
+       <string>procServControl.ui</string>
+      </property>
+      <property name="args">
+       <string>procServ=RASPI05:Newport1936</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="caLineEdit" name="caLineEdit_17">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string notr="true">RASPI01:PowerMeterApp:STATUS</string>
+      </property>
+      <property name="foreground">
+       <color>
+        <red>0</red>
+        <green>224</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color>
+        <red>105</red>
+        <green>105</green>
+        <blue>105</blue>
+       </color>
+      </property>
+      <property name="colorMode">
+       <enum>caLineEdit::Alarm_Default</enum>
+      </property>
+      <property name="alarmHandling">
+       <enum>caLineEdit::onForeground</enum>
+      </property>
+      <property name="fontScaleMode" stdset="0">
+       <enum>caLineEdit::None</enum>
+      </property>
+     </widget>
+    </item>
     <item row="7" column="0">
      <widget class="caLabel" name="calabel_13">
       <property name="sizePolicy">
@@ -176,56 +256,6 @@ QTabWidget {
       </property>
       <property name="channel" stdset="0">
        <string notr="true">RASPI01:SDG:STATUS</string>
-      </property>
-      <property name="foreground">
-       <color>
-        <red>0</red>
-        <green>224</green>
-        <blue>0</blue>
-       </color>
-      </property>
-      <property name="background">
-       <color>
-        <red>105</red>
-        <green>105</green>
-        <blue>105</blue>
-       </color>
-      </property>
-      <property name="colorMode">
-       <enum>caLineEdit::Alarm_Default</enum>
-      </property>
-      <property name="alarmHandling">
-       <enum>caLineEdit::onForeground</enum>
-      </property>
-      <property name="fontScaleMode" stdset="0">
-       <enum>caLineEdit::None</enum>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="caLineEdit" name="caLineEdit_17">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>200</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-      </property>
-      <property name="channel" stdset="0">
-       <string notr="true">RASPI01:PowerMeterApp:STATUS</string>
       </property>
       <property name="foreground">
        <color>
@@ -2166,36 +2196,6 @@ QTabWidget {
       </property>
      </widget>
     </item>
-    <item row="24" column="2">
-     <widget class="caRelatedDisplay" name="carelateddisplay_12">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>20</width>
-        <height>20</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="labels">
-       <string/>
-      </property>
-      <property name="files">
-       <string>procServControl.ui</string>
-      </property>
-      <property name="args">
-       <string>procServ=RASPI05:Newport1936</string>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="0">
      <widget class="caLabel" name="calabel_9">
       <property name="sizePolicy">
@@ -2526,7 +2526,7 @@ QTabWidget {
       </property>
       <property name="font">
        <font>
-        <pointsize>11</pointsize>
+        <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -2626,6 +2626,125 @@ QTabWidget {
       </property>
       <property name="args">
        <string>procServ=RASPI07:laserstatus</string>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="0">
+     <widget class="caLabel" name="calabel_28">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>FieldMax</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="foreground">
+       <color>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="1">
+     <widget class="caLineEdit" name="caLineEdit_32">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignAbsolute|Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string notr="true">RASPI07:FieldMax:STATUS</string>
+      </property>
+      <property name="foreground">
+       <color>
+        <red>0</red>
+        <green>224</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="background">
+       <color>
+        <red>105</red>
+        <green>105</green>
+        <blue>105</blue>
+       </color>
+      </property>
+      <property name="colorMode">
+       <enum>caLineEdit::Alarm_Default</enum>
+      </property>
+      <property name="alarmHandling">
+       <enum>caLineEdit::onForeground</enum>
+      </property>
+      <property name="fontScaleMode" stdset="0">
+       <enum>caLineEdit::None</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="28" column="2">
+     <widget class="caRelatedDisplay" name="carelateddisplay_31">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="labels">
+       <string/>
+      </property>
+      <property name="files">
+       <string>procServControl.ui</string>
+      </property>
+      <property name="args">
+       <string>procServ=RASPI07:FieldMax</string>
       </property>
      </widget>
     </item>
