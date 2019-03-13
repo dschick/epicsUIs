@@ -1478,8 +1478,14 @@ caclock * {
          <string>Pressure Status</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_18">
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_21">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
              <family>Ubuntu Condensed</family>
@@ -1487,31 +1493,94 @@ caclock * {
             </font>
            </property>
            <property name="text">
-            <string>Reference:</string>
+            <string>Spec.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_25">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Chamber:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_17">
+         <item row="1" column="5">
+          <widget class="caLineEdit" name="calineedit_51">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
-             <family>Ubuntu Condensed</family>
+             <family>Ubuntu</family>
              <pointsize>-1</pointsize>
             </font>
            </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
            <property name="text">
-            <string>Mirror:</string>
+            <string>-.-e--- mBar</string>
            </property>
            <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:IMAG:SENS1:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>120</red>
+             <green>120</green>
+             <blue>120</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
            </property>
           </widget>
          </item>
-         <item row="3" column="2">
-          <widget class="QLabel" name="label_27">
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="font">
             <font>
              <family>Ubuntu Condensed</family>
@@ -1519,42 +1588,7 @@ caclock * {
             </font>
            </property>
            <property name="text">
-            <string>Grating:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_13">
-           <property name="font">
-            <font>
-             <family>Ubuntu Condensed</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>HHG:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QLabel" name="label_20">
-           <property name="font">
-            <font>
-             <family>Ubuntu Condensed</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Sample:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            <string>Imag.</string>
            </property>
           </widget>
          </item>
@@ -1567,7 +1601,7 @@ caclock * {
             </font>
            </property>
            <property name="text">
-            <string>Toroid:</string>
+            <string>Reference</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1661,7 +1695,7 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">PR:FRONTEND:MIRROR:RP</string>
+            <string notr="true">PR:FRONTEND:DPS:RP</string>
            </property>
            <property name="foreground">
             <color>
@@ -1721,67 +1755,7 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">PR:FRONTEND:REFERENCE:RP</string>
-           </property>
-           <property name="foreground">
-            <color>
-             <red>0</red>
-             <green>255</green>
-             <blue>0</blue>
-            </color>
-           </property>
-           <property name="background">
-            <color alpha="0">
-             <red>255</red>
-             <green>255</green>
-             <blue>255</blue>
-            </color>
-           </property>
-           <property name="colorMode">
-            <enum>caLineEdit::Alarm_Static</enum>
-           </property>
-           <property name="precision">
-            <number>1</number>
-           </property>
-           <property name="precisionMode">
-            <enum>caLineEdit::User</enum>
-           </property>
-           <property name="unitsEnabled">
-            <bool>false</bool>
-           </property>
-           <property name="formatType">
-            <enum>caLineEdit::exponential</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="caLineEdit" name="calineedit_48">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Ubuntu</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="text">
-            <string>-.-e--- mBar</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="channel" stdset="0">
-            <string notr="true">PR:SPEC:TOROID:RP</string>
+            <string notr="true">PR:FRONTEND:MIRROR:RP</string>
            </property>
            <property name="foreground">
             <color>
@@ -1953,14 +1927,8 @@ caclock * {
            </property>
           </widget>
          </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_21">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_27">
            <property name="font">
             <font>
              <family>Ubuntu Condensed</family>
@@ -1968,28 +1936,79 @@ caclock * {
             </font>
            </property>
            <property name="text">
-            <string>Spec.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="4">
-          <widget class="QLabel" name="label_25">
-           <property name="font">
-            <font>
-             <family>Ubuntu Condensed</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Chamber:</string>
+            <string>Grating:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
            </property>
           </widget>
          </item>
-         <item row="1" column="5">
-          <widget class="caLineEdit" name="calineedit_51">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>HHG:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_20">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sample:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Mirror:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>DPS</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="caLineEdit" name="calineedit_48">
            <property name="sizePolicy">
             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
              <horstretch>0</horstretch>
@@ -2015,7 +2034,83 @@ caclock * {
             <bool>true</bool>
            </property>
            <property name="channel" stdset="0">
-            <string notr="true">PR:IMAG:SENS1:RP</string>
+            <string notr="true">PR:SPEC:REFERENCE:RP</string>
+           </property>
+           <property name="foreground">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="background">
+            <color alpha="0">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </property>
+           <property name="colorMode">
+            <enum>caLineEdit::Alarm_Static</enum>
+           </property>
+           <property name="precision">
+            <number>1</number>
+           </property>
+           <property name="precisionMode">
+            <enum>caLineEdit::User</enum>
+           </property>
+           <property name="unitsEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="formatType">
+            <enum>caLineEdit::exponential</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="label_28">
+           <property name="font">
+            <font>
+             <family>Ubuntu Condensed</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Toroid</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="5">
+          <widget class="caLineEdit" name="calineedit_52">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Ubuntu</family>
+             <pointsize>-1</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>-.-e--- mBar</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="channel" stdset="0">
+            <string notr="true">PR:IMAG:TOROID:RP</string>
            </property>
            <property name="foreground">
             <color>
@@ -2045,25 +2140,6 @@ caclock * {
            </property>
            <property name="formatType">
             <enum>caLineEdit::exponential</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLabel" name="label_23">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="font">
-            <font>
-             <family>Ubuntu Condensed</family>
-             <pointsize>-1</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Imag.</string>
            </property>
           </widget>
          </item>
