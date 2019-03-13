@@ -2763,7 +2763,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PR:FRONTEND:REFERENCE:RP</string>
+     <string notr="true">PR:SPEC:REFERENCE:RP</string>
     </property>
     <property name="foreground">
      <color>
@@ -2824,7 +2824,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">PR:SPEC:TOROID:RP</string>
+     <string notr="true">PR:IMAG:TOROID:RP</string>
     </property>
     <property name="foreground">
      <color>
@@ -5678,10 +5678,95 @@
        <x>10</x>
        <y>30</y>
        <width>511</width>
-       <height>117</height>
+       <height>123</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
+      <item row="3" column="4">
+       <widget class="caRelatedDisplay" name="carelateddisplay_16">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>10</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="labels">
+         <string>TOROID</string>
+        </property>
+        <property name="files">
+         <string>GraphixSensor.ui</string>
+        </property>
+        <property name="args">
+         <string>P=PR,D=IMAG,R=TOROID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="caLineEdit" name="calineedit_48">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+          <pointsize>10</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>-.-e--- mBar</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string notr="true">PR:IMAG:TOROID:RP</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color alpha="0">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Alarm_Static</enum>
+        </property>
+        <property name="precision">
+         <number>1</number>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::User</enum>
+        </property>
+        <property name="unitsEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::exponential</enum>
+        </property>
+       </widget>
+      </item>
       <item row="1" column="1">
        <widget class="caLineEdit" name="calineedit_35">
         <property name="font">
@@ -5787,13 +5872,13 @@
          </font>
         </property>
         <property name="labels">
-         <string>REFERECNE</string>
+         <string>MIRROR</string>
         </property>
         <property name="files">
          <string>GraphixSensor.ui</string>
         </property>
         <property name="args">
-         <string>P=PR,D=FRONTEND,R=REFERENCE</string>
+         <string>P=PR,D=FRONTEND,R=MIRROR</string>
         </property>
        </widget>
       </item>
@@ -5819,7 +5904,7 @@
          <bool>true</bool>
         </property>
         <property name="channel" stdset="0">
-         <string notr="true">PR:FRONTEND:MIRROR:RP</string>
+         <string notr="true">PR:FRONTEND:DPS:RP</string>
         </property>
         <property name="foreground">
          <color>
@@ -5874,62 +5959,7 @@
          <bool>true</bool>
         </property>
         <property name="channel" stdset="0">
-         <string notr="true">PR:FRONTEND:REFERENCE:RP</string>
-        </property>
-        <property name="foreground">
-         <color>
-          <red>0</red>
-          <green>255</green>
-          <blue>0</blue>
-         </color>
-        </property>
-        <property name="background">
-         <color alpha="0">
-          <red>255</red>
-          <green>255</green>
-          <blue>255</blue>
-         </color>
-        </property>
-        <property name="colorMode">
-         <enum>caLineEdit::Alarm_Static</enum>
-        </property>
-        <property name="precision">
-         <number>1</number>
-        </property>
-        <property name="precisionMode">
-         <enum>caLineEdit::User</enum>
-        </property>
-        <property name="unitsEnabled">
-         <bool>true</bool>
-        </property>
-        <property name="formatType">
-         <enum>caLineEdit::exponential</enum>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="3">
-       <widget class="caLineEdit" name="calineedit_48">
-        <property name="font">
-         <font>
-          <family>Monospace</family>
-          <pointsize>10</pointsize>
-          <stylestrategy>PreferDefault</stylestrategy>
-         </font>
-        </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string>-.-e--- mBar</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-        <property name="channel" stdset="0">
-         <string notr="true">PR:SPEC:TOROID:RP</string>
+         <string notr="true">PR:FRONTEND:MIRROR:RP</string>
         </property>
         <property name="foreground">
          <color>
@@ -6263,13 +6293,13 @@
          </font>
         </property>
         <property name="labels">
-         <string>MIRROR</string>
+         <string>DPS</string>
         </property>
         <property name="files">
          <string>GraphixSensor.ui</string>
         </property>
         <property name="args">
-         <string>P=PR,D=FRONTEND,R=MIRROR</string>
+         <string>P=PR,D=FRONTEND,R=DPS</string>
         </property>
        </widget>
       </item>
@@ -6332,7 +6362,7 @@
        </widget>
       </item>
       <item row="1" column="2">
-       <widget class="caRelatedDisplay" name="carelateddisplay_16">
+       <widget class="caRelatedDisplay" name="carelateddisplay_31">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
@@ -6351,13 +6381,153 @@
          </font>
         </property>
         <property name="labels">
-         <string>TOROID</string>
+         <string>REFERENCE</string>
         </property>
         <property name="files">
          <string>GraphixSensor.ui</string>
         </property>
         <property name="args">
-         <string>P=PR,D=SPEC,R=TOROID</string>
+         <string>P=PR,D=SPEC,R=REFERENCE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="caLineEdit" name="calineedit_53">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+          <pointsize>10</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>-.-e--- mBar</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string notr="true">PR:SPEC:REFERENCE:RP</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color alpha="0">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Alarm_Static</enum>
+        </property>
+        <property name="precision">
+         <number>1</number>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::User</enum>
+        </property>
+        <property name="unitsEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::exponential</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="caRelatedDisplay" name="carelateddisplay_32">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>10</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="labels">
+         <string>SENS2</string>
+        </property>
+        <property name="files">
+         <string>GraphixSensor.ui</string>
+        </property>
+        <property name="args">
+         <string>P=PR,D=IMAG,R=SENS2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="caLineEdit" name="calineedit_54">
+        <property name="font">
+         <font>
+          <family>Monospace</family>
+          <pointsize>10</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>-.-e--- mBar</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="channel" stdset="0">
+         <string notr="true">PR:IMAG:SENS2:RP</string>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color alpha="0">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>caLineEdit::Alarm_Static</enum>
+        </property>
+        <property name="precision">
+         <number>1</number>
+        </property>
+        <property name="precisionMode">
+         <enum>caLineEdit::User</enum>
+        </property>
+        <property name="unitsEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="formatType">
+         <enum>caLineEdit::exponential</enum>
         </property>
        </widget>
       </item>
