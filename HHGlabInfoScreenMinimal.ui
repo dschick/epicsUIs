@@ -104,10 +104,16 @@ caclock * {
           <item row="0" column="1">
            <widget class="caLineEdit" name="calineedit_26">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
             </property>
             <property name="font">
              <font>
@@ -164,10 +170,16 @@ caclock * {
           <item row="1" column="1">
            <widget class="caLineEdit" name="calineedit_28">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
             </property>
             <property name="font">
              <font>
@@ -264,10 +276,16 @@ caclock * {
           <item row="0" column="1">
            <widget class="caLineEdit" name="calineedit_27">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
             </property>
             <property name="font">
              <font>
