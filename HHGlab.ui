@@ -8142,8 +8142,8 @@ line-color:#ffffff;
    <widget class="caLineEdit" name="calineedit_58">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>130</y>
+      <x>280</x>
+      <y>440</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -8168,7 +8168,7 @@ line-color:#ffffff;
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">ENV:LAB:humid</string>
+     <string notr="true">ENV:LAB1:humid</string>
     </property>
     <property name="foreground">
      <color>
@@ -8203,8 +8203,8 @@ line-color:#ffffff;
    <widget class="caLineEdit" name="calineedit_59">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>111</y>
+      <x>280</x>
+      <y>421</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -8229,7 +8229,7 @@ line-color:#ffffff;
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string notr="true">ENV:LAB:temp</string>
+     <string notr="true">ENV:LAB1:temp</string>
     </property>
     <property name="foreground">
      <color>
@@ -8264,8 +8264,8 @@ line-color:#ffffff;
    <widget class="caRelatedDisplay" name="carelateddisplay_34">
     <property name="geometry">
      <rect>
-      <x>846</x>
-      <y>111</y>
+      <x>256</x>
+      <y>421</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -8294,7 +8294,7 @@ line-color:#ffffff;
      <string>Environment.ui</string>
     </property>
     <property name="args">
-     <string>P=LAB</string>
+     <string>P=LAB1</string>
     </property>
    </widget>
    <widget class="caLabel" name="calabel_36">
@@ -8337,8 +8337,8 @@ line-color:#ffffff;
    <widget class="caLabel" name="calabel_37">
     <property name="geometry">
      <rect>
-      <x>750</x>
-      <y>109</y>
+      <x>160</x>
+      <y>419</y>
       <width>91</width>
       <height>22</height>
      </rect>
@@ -8358,7 +8358,7 @@ line-color:#ffffff;
      </font>
     </property>
     <property name="text">
-     <string>Lab</string>
+     <string>Lab1</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -8432,7 +8432,7 @@ line-color:#ffffff;
         <enum>caLineEdit::Static</enum>
        </property>
        <property name="precision">
-        <number>2</number>
+        <number>3</number>
        </property>
        <property name="precisionMode">
         <enum>caLineEdit::User</enum>
@@ -8441,7 +8441,7 @@ line-color:#ffffff;
         <bool>true</bool>
        </property>
        <property name="formatType">
-        <enum>caLineEdit::exponential</enum>
+        <enum>caLineEdit::decimal</enum>
        </property>
       </widget>
      </item>
@@ -8549,7 +8549,7 @@ line-color:#ffffff;
         <enum>caLineEdit::Static</enum>
        </property>
        <property name="precision">
-        <number>2</number>
+        <number>3</number>
        </property>
        <property name="precisionMode">
         <enum>caLineEdit::User</enum>
@@ -8558,7 +8558,7 @@ line-color:#ffffff;
         <bool>true</bool>
        </property>
        <property name="formatType">
-        <enum>caLineEdit::exponential</enum>
+        <enum>caLineEdit::decimal</enum>
        </property>
       </widget>
      </item>
@@ -8856,6 +8856,201 @@ line-color:#ffffff;
      </item>
     </layout>
    </widget>
+   <widget class="caLabel" name="calabel_39">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>421</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lab2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="caRelatedDisplay" name="carelateddisplay_35">
+    <property name="geometry">
+     <rect>
+      <x>1026</x>
+      <y>421</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>10</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="labels">
+     <string/>
+    </property>
+    <property name="files">
+     <string>Environment.ui</string>
+    </property>
+    <property name="args">
+     <string>P=LAB2</string>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_60">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>440</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>--.- %</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">ENV:LAB2:humid</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Static</enum>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::decimal</enum>
+    </property>
+   </widget>
+   <widget class="caLineEdit" name="calineedit_66">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>421</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>--.- C</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string notr="true">ENV:LAB2:temp</string>
+    </property>
+    <property name="foreground">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="background">
+     <color alpha="0">
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="colorMode">
+     <enum>caLineEdit::Alarm_Static</enum>
+    </property>
+    <property name="precision">
+     <number>1</number>
+    </property>
+    <property name="precisionMode">
+     <enum>caLineEdit::User</enum>
+    </property>
+    <property name="unitsEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="formatType">
+     <enum>caLineEdit::decimal</enum>
+    </property>
+   </widget>
    <zorder>sdg_4</zorder>
    <zorder>table2</zorder>
    <zorder>capolyline_21</zorder>
@@ -8998,6 +9193,10 @@ line-color:#ffffff;
    <zorder>calabel_36</zorder>
    <zorder>calabel_37</zorder>
    <zorder>gridLayoutWidget_4</zorder>
+   <zorder>calabel_39</zorder>
+   <zorder>carelateddisplay_35</zorder>
+   <zorder>calineedit_60</zorder>
+   <zorder>calineedit_66</zorder>
   </widget>
  </widget>
  <customwidgets>
