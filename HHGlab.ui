@@ -1566,14 +1566,26 @@
    <widget class="caMessageButton" name="camessagebutton">
     <property name="geometry">
      <rect>
-      <x>842</x>
-      <y>321</y>
-      <width>15</width>
-      <height>15</height>
+      <x>841</x>
+      <y>320</y>
+      <width>21</width>
+      <height>21</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">SHUTTER:HHG:Flip</string>
@@ -1693,10 +1705,10 @@
    <widget class="caMessageButton" name="camessagebutton_2">
     <property name="geometry">
      <rect>
-      <x>1327</x>
-      <y>352</y>
-      <width>16</width>
-      <height>16</height>
+      <x>1312</x>
+      <y>347</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -1826,10 +1838,10 @@
    <widget class="caMessageButton" name="camessagebutton_3">
     <property name="geometry">
      <rect>
-      <x>1359</x>
-      <y>366</y>
-      <width>15</width>
-      <height>15</height>
+      <x>1354</x>
+      <y>351</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -6711,10 +6723,10 @@
    <widget class="caMessageButton" name="camessagebutton_4">
     <property name="geometry">
      <rect>
-      <x>1149</x>
-      <y>238</y>
-      <width>15</width>
-      <height>15</height>
+      <x>1139</x>
+      <y>228</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -7444,10 +7456,10 @@
    <widget class="caMessageButton" name="camessagebutton_5">
     <property name="geometry">
      <rect>
-      <x>812</x>
-      <y>200</y>
-      <width>15</width>
-      <height>15</height>
+      <x>802</x>
+      <y>190</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -8494,7 +8506,7 @@ line-color:#ffffff;
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -8641,7 +8653,7 @@ line-color:#ffffff;
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -8872,7 +8884,7 @@ line-color:#ffffff;
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
@@ -8903,7 +8915,7 @@ line-color:#ffffff;
        </property>
        <property name="font">
         <font>
-         <pointsize>9</pointsize>
+         <pointsize>8</pointsize>
          <weight>50</weight>
          <italic>false</italic>
          <bold>false</bold>
