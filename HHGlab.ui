@@ -6480,13 +6480,13 @@
          </font>
         </property>
         <property name="labels">
-         <string>SENS2</string>
+         <string>INCOUPLING</string>
         </property>
         <property name="files">
          <string>GraphixSensor.ui</string>
         </property>
         <property name="args">
-         <string>P=PR,D=IMAG,R=SENS2</string>
+         <string>P=PR,D=IMAG,R=INCOUPLING</string>
         </property>
        </widget>
       </item>
@@ -6512,7 +6512,7 @@
          <bool>true</bool>
         </property>
         <property name="channel" stdset="0">
-         <string notr="true">PR:IMAG:SENS2:RP</string>
+         <string notr="true">PR:IMAG:INCOUPLING:RP</string>
         </property>
         <property name="foreground">
          <color>
